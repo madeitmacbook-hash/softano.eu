@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Softano.eu: Software licences, servers and IT infrastructure</title>
+  <meta name="description" content="Software licences new or pre-owned, server hardware new or refurbished. Personal advice in German, English and Greek for businesses across Europe.">
+  <meta name="theme-color" content="#1C3A88">
+  <link rel="icon" href="assets/symbol.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,600..900&family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.3 11a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 1.9-1.5L21 8H6.1"/><circle cx="10" cy="20.3" r="1.2"/><circle cx="17" cy="20.3" r="1.2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12 20 3M16.5 6.5l3 3M14 9l2 2"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="7" rx="1.8"/><rect x="3" y="13.5" width="18" height="7" rx="1.8"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13.5" width="4" height="6" rx="1.5"/><rect x="17" y="13.5" width="4" height="6" rx="1.5"/><path d="M19 19.5a3 3 0 0 1-3 2.5h-3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12.5h7M9 16.5h7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-4.5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3.5v3h-7"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><rect x="8" y="5.5" width="8" height="4" rx=".6"/><path d="M8.5 13h.01M12 13h.01M15.5 13h.01M8.5 16.5h.01M12 16.5h.01M15.5 16.5h.01"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l2 5L8 10a11 11 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-euro" viewBox="0 0 24 24"><path d="M17.5 6.5a6.5 6.5 0 1 0 0 11M4 10.5h9M4 13.5h9"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.6-4.4L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0 0 14.6 4.4l1.4-1.9M20 20v-4.5h-4.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5l8-2v18M12 8h8v13M7 8h2M7 12h2M7 16h2M15 12h2M15 16h2M3 21h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-erase" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-chain" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7L11.5 6.8"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1.5-1.5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+
+    <!-- Relume style pixel-block stairs -->
+    <symbol id="px-stairs" viewBox="0 0 112 112">
+      <rect x="0" y="0" width="16" height="16"/><rect x="0" y="16" width="16" height="16"/><rect x="16" y="16" width="16" height="16"/>
+      <rect x="0" y="32" width="16" height="16"/><rect x="16" y="32" width="16" height="16"/><rect x="32" y="32" width="16" height="16"/>
+      <rect x="0" y="48" width="16" height="16" opacity=".55"/><rect x="16" y="48" width="16" height="16"/><rect x="32" y="48" width="16" height="16"/><rect x="48" y="48" width="16" height="16"/>
+      <rect x="16" y="64" width="16" height="16" opacity=".55"/><rect x="48" y="64" width="16" height="16"/><rect x="64" y="64" width="16" height="16"/>
+      <rect x="64" y="80" width="16" height="16" opacity=".55"/><rect x="80" y="80" width="16" height="16"/><rect x="96" y="96" width="16" height="16" opacity=".55"/>
+    </symbol>
+
+    <!-- Miter style isometric line art: server rack -->
+    <symbol id="iso-rack" viewBox="-4 -4 234 262">
+      <polygon points="86.6,0 225.2,80 138.6,130 0,50" fill="currentColor" fill-opacity=".06"/>
+      <polygon points="0,50 138.6,130 138.6,250 0,170" fill="currentColor" fill-opacity=".03"/>
+      <polygon points="138.6,130 225.2,80 225.2,200 138.6,250" fill="currentColor" fill-opacity=".1"/>
+      <path d="M0 70 138.6 150M0 90 138.6 170M0 110 138.6 190M0 130 138.6 210M0 150 138.6 230"/>
+      <path d="M12 66.9 60 94.6M12 86.9 60 114.6M12 106.9 60 134.6M12 126.9 60 154.6M12 146.9 60 174.6M12 166.9 60 194.6" stroke-dasharray="3 4"/>
+      <g fill="var(--led, #13B8A7)" stroke="none"><circle cx="117.8" cy="128" r="2.6"/><circle cx="117.8" cy="148" r="2.6"/><circle cx="117.8" cy="168" r="2.6"/><circle cx="117.8" cy="188" r="2.6"/><circle cx="117.8" cy="208" r="2.6"/><circle cx="117.8" cy="228" r="2.6"/></g>
+    </symbol>
+    <!-- isometric stacked bundle -->
+    <symbol id="iso-stack" viewBox="-4 -4 232 212">
+      <g>
+        <polygon points="86.6,100 225.2,150 138.6,200 0,150" fill="currentColor" fill-opacity=".05"/>
+        <polygon points="86.6,62 225.2,112 138.6,162 0,112" fill="var(--panel, #fff)"/>
+        <path d="M0 112v38M138.6 162v38M225.2 112v38"/>
+        <polygon points="86.6,62 225.2,112 138.6,162 0,112" fill="currentColor" fill-opacity=".05"/>
+        <polygon points="66.6,30 185.2,74 118.6,116 20,72" fill="var(--panel, #fff)"/>
+        <path d="M20 72v30M118.6 116v30M185.2 74v30"/>
+        <polygon points="66.6,30 185.2,74 118.6,116 20,72" fill="currentColor" fill-opacity=".08"/>
+        <polygon points="56.6,0 145.2,34 98.6,64 30,30" fill="var(--panel, #fff)"/>
+        <path d="M30 30v24M98.6 64v24M145.2 34v24"/>
+        <polygon points="56.6,0 145.2,34 98.6,64 30,30" fill="var(--accent-fill, #13B8A7)" fill-opacity=".35"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ UTILITY BAR ============ -->
+<div class="utility">
+  <div class="wrap utility-in">
+    <ul class="util-contact">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Mon–Fri 10:00–18:00 (Athens)</li>
+      <li><a href="tel:+498005885522" title="Germany, toll-free"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="muted-inv">DE</span> 0800 588 55 22</a></li>
+      <li class="hide-sm"><a href="tel:+302311181662" title="Greece and international"><span class="muted-inv">GR</span> +30 2311 18 16 62</a></li>
+      <li class="util-mail"><a href="mailto:support@softano.eu"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>support@softano.eu</a></li>
+    </ul>
+    <ul class="util-links">
+      <li><a href="#partners">Partners &amp; Manufacturers</a></li>
+      <li><a href="#tools">Licensing Advisor</a></li>
+      <li><a href="#services">Installation Support</a></li>
+      <li><a href="#b2b">B2B &amp; Enterprise</a></li>
+      <li><a href="#contact">About Us</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Language">
+      <svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>
+      <button type="button" aria-pressed="true">EN</button>
+      <button type="button" aria-pressed="false">DE</button>
+      <button type="button" aria-pressed="false">EL</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <img src="assets/symbol.svg" width="34" height="34" alt="">
+      <span class="brand-text"><span class="brand-name">Softano<span class="brand-tld">.eu</span></span><span class="brand-tag">Software &amp; Servers 24h</span></span>
+    </a>
+    <nav class="menu" aria-label="Main">
+      <ul>
+        <li><a href="#range">Operating Systems &amp; Server Licences</a></li>
+        <li><a href="#range">Office &amp; Productivity</a></li>
+        <li><a href="#range">Virtualisation &amp; Backup</a></li>
+        <li><a href="#hardware">Infrastructure &amp; Server Hardware</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" aria-label="Search the shop" data-focus-search><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></button>
+      <a class="icon-btn" href="#range" aria-label="Cart, 0 items"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg><span class="cart-count" aria-hidden="true">0</span></a>
+      <a class="btn btn-outline btn-sm hide-sm" href="#b2b"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg>B2B Connect</a>
+      <a class="btn btn-navy btn-sm hide-md" href="#contact">Request a Quote</a>
+      <button class="icon-btn burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="wrap">
+      <p class="mono-label">Shop</p>
+      <ul class="mm-main">
+        <li><a href="#range">Operating Systems &amp; Server Licences</a></li>
+        <li><a href="#range">Office &amp; Productivity</a></li>
+        <li><a href="#range">Virtualisation &amp; Backup</a></li>
+        <li><a href="#hardware">Infrastructure &amp; Server Hardware</a></li>
+      </ul>
+      <p class="mono-label">Softano</p>
+      <ul class="mm-util">
+        <li><a href="#partners">Partners &amp; Manufacturers</a></li>
+        <li><a href="#tools">Licensing Advisor</a></li>
+        <li><a href="#services">Installation Support</a></li>
+        <li><a href="#b2b">B2B &amp; Enterprise</a></li>
+        <li><a href="#contact">About Us</a></li>
+      </ul>
+      <div class="mm-cta">
+        <a class="btn btn-navy" href="#contact">Request a Quote</a>
+        <a class="btn btn-outline" href="#b2b">B2B Connect</a>
+      </div>
+      <p class="mm-contact"><a href="tel:+498005885522">0800 588 55 22</a> · <a href="tel:+302311181662">+30 2311 18 16 62</a><br><a href="mailto:support@softano.eu">support@softano.eu</a></p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO (Relume / Roommaster centred + Mobbin inline tiles + Miter label) ============ -->
+<section class="hero">
+  <div class="hero-dots" aria-hidden="true"></div>
+  <svg class="px px-hero-l" aria-hidden="true"><use href="#px-stairs"/></svg>
+  <svg class="px px-hero-r" aria-hidden="true"><use href="#px-stairs"/></svg>
+  <div class="wrap guides hero-in">
+    <p class="badge reveal"><span class="dot" aria-hidden="true"></span>Software &amp; servers for business · Germany &amp; Greece</p>
+    <h1 class="hero-title reveal">
+      Software licences
+      <span class="tile tile-navy" aria-hidden="true"><svg class="ic"><use href="#i-key"/></svg></span><br>
+      and <span class="tile tile-teal" aria-hidden="true"><svg class="ic"><use href="#i-server"/></svg></span> servers,
+      <span class="accent-line">from one source.</span>
+    </h1>
+    <p class="hero-lead reveal">Windows Server, SQL Server and Office, new or pre-owned. Rack servers, storage and networking, new or refurbished. For businesses across Europe, with personal advice in German, English and Greek.</p>
+
+    <form class="prompt reveal" role="search" action="#range" data-search>
+      <label class="sr-only" for="q">Search licences and hardware</label>
+      <div class="prompt-field">
+        <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="q" name="q" type="search" autocomplete="off" placeholder="Search Windows Server 2025, Office 2024, HPE ProLiant…">
+      </div>
+      <div class="prompt-row">
+        <div class="prompt-chips" aria-label="Popular searches">
+          <button type="button" class="chip" data-fill="Windows Server 2025">Windows Server</button>
+          <button type="button" class="chip" data-fill="SQL Server 2022">SQL Server</button>
+          <button type="button" class="chip" data-fill="Office 2024">Office 2024</button>
+          <button type="button" class="chip hide-sm" data-fill="Refurbished rack server">Rack servers</button>
+        </div>
+        <button class="btn btn-navy" type="submit">Browse Products <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </form>
+    <div class="hero-sub reveal">
+      <a class="text-link" href="#contact">or Request a Quote</a>
+      <div class="trust">
+        <span class="lang-stack" aria-hidden="true"><span>DE</span><span>EN</span><span>EL</span></span>
+        <span>Personal advice in German, English and Greek</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Miter style product showcase in a hatched frame -->
+  <div class="wrap showcase-wrap reveal">
+    <div class="hatch-frame">
+      <div class="browser" aria-label="Preview of the Softano shop: product page and order summary" role="img">
+        <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">softano.eu/windows-server-2025-standard-16-core</span></div>
+        <div class="shop">
+          <aside class="shop-side" aria-hidden="true">
+            <p class="ss-head">Shop</p>
+            <ul>
+              <li class="on"><svg class="ic"><use href="#i-server"/></svg>Operating Systems &amp; Server</li>
+              <li><svg class="ic"><use href="#i-doc"/></svg>Office &amp; Productivity</li>
+              <li><svg class="ic"><use href="#i-layers"/></svg>Virtualisation &amp; Backup <em>soon</em></li>
+              <li><svg class="ic"><use href="#i-box"/></svg>Server Hardware</li>
+            </ul>
+            <p class="ss-head">B2B Connect</p>
+            <div class="ss-acct"><span class="av">B</span><div><b>Business account</b><small>Discount tier −10%</small></div></div>
+          </aside>
+          <div class="shop-main">
+            <p class="crumbs" aria-hidden="true">Shop / Operating Systems &amp; Server / Windows Server</p>
+            <div class="pd">
+              <div class="pd-visual" aria-hidden="true">
+                <div class="lic-box"><span class="lb-top">WINDOWS SERVER</span><span class="lb-big">2025</span><span class="lb-sub">Standard · 16 Core</span><svg class="ic"><use href="#i-key"/></svg></div>
+              </div>
+              <div class="pd-info">
+                <h2 class="pd-title">Windows Server 2025 Standard, 16 Core</h2>
+                <p class="pd-meta">Digital licence · Key and download link by email</p>
+                <p class="pd-label">Condition</p>
+                <div class="cond" data-showcase>
+                  <button type="button" class="cond-opt" data-price="1499.95" aria-pressed="false"><span class="co-name">New <small>(CSP)</small></span><span class="co-price">€1,499.95</span></button>
+                  <button type="button" class="cond-opt" data-price="719.95" aria-pressed="true"><span class="co-name">Pre-Owned <small>(Volume)</small></span><span class="co-price">€719.95 <em class="save">−52%</em></span></button>
+                </div>
+                <ul class="pd-facts" aria-hidden="true">
+                  <li><svg class="ic"><use href="#i-check"/></svg>Same term and functionality as new</li>
+                  <li><svg class="ic"><use href="#i-chain"/></svg>Documented chain of ownership</li>
+                </ul>
+                <div class="scribble scribble-hero" aria-hidden="true">
+                  <svg viewBox="0 0 120 90"><path d="M12 80C40 78 70 60 84 14"/><path d="M72 24l12-12 10 15"/></svg>
+                  <span>same licence,<br>half the price</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop-sum">
+            <p class="sum-head">Order summary</p>
+            <div class="sum-line"><span data-sum-name>Windows Server 2025 Std, Pre-Owned</span><b data-sum-base>€719.95</b></div>
+            <div class="sum-line teal"><span>Business discount −10%</span><b data-sum-disc>−€72.00</b></div>
+            <div class="sum-line"><span>VAT 0% <small>EU VAT ID DE•••••••</small></span><b>€0.00</b></div>
+            <div class="sum-total"><span>Total</span><b data-sum-total>€647.95</b></div>
+            <div class="sum-pay"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Paid on invoice <small>B2B, credit approved</small></div>
+            <span class="btn btn-navy btn-block" aria-hidden="true">Place order</span>
+          </div>
+        </div>
+      </div>
+      <div class="float-chip fc-hero" aria-hidden="true"><svg class="ic"><use href="#i-mail"/></svg><span><b>Licence key sent by email</b><small>with step-by-step install guide</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNER GRID (Miter hairline logo grid) ============ -->
+<section class="partners" id="partners" aria-labelledby="partners-h">
+  <div class="wrap guides">
+    <div class="partners-head">
+      <p class="mono-label" id="partners-h">Partners &amp; manufacturers</p>
+      <p class="partners-note">15 manufacturers across software, servers, storage and networking</p>
+    </div>
+    <ul class="logo-grid">
+      <li><span class="wm wm-ms">Microsoft</span></li>
+      <li><span class="wm wm-bold">HPE</span></li>
+      <li><span class="wm wm-wide">Dell Technologies</span></li>
+      <li><span class="wm wm-lower">Lenovo</span></li>
+      <li><span class="wm wm-lower">vmware</span></li>
+      <li><span class="wm wm-bold">Veeam</span></li>
+      <li><span class="wm wm-lower">Synology</span></li>
+      <li><span class="wm wm-stripe">IBM</span></li>
+      <li><span class="wm wm-caps">NetApp</span></li>
+      <li><span class="wm wm-bold">Proxmox</span></li>
+      <li><span class="wm wm-caps">Huawei</span></li>
+      <li><span class="wm wm-bold">Acronis</span></li>
+      <li><span class="wm wm-small">HPE Aruba Networking</span></li>
+      <li><span class="wm wm-caps">Hitachi</span></li>
+      <li><span class="wm wm-small">LANCOM Systems</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ STATEMENT (Mobbin two-tone) + STATS (Insp 1) ============ -->
+<section class="statement" aria-labelledby="statement-h">
+  <div class="wrap guides">
+    <h2 class="two-tone reveal" id="statement-h">Licences from one supplier, servers from another, help from nobody.
+      <span>Softano brings software, hardware and advice together, in three languages.</span></h2>
+    <dl class="stats reveal">
+      <div><dt>Pre-owned Windows Server 2025 Standard, compared with new</dt><dd>−52%</dd></div>
+      <div><dt>VAT for businesses with a valid EU VAT ID outside Greece</dt><dd>0%</dd></div>
+      <div><dt>Months of warranty on refurbished hardware (12 standard, extendable)</dt><dd>36</dd></div>
+      <div><dt>Manufacturers across software and hardware</dt><dd>15+</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ SMARTER WAY (Insp 1 layout + Roommaster soft cards with UI snippets) ============ -->
+<section class="smarter" aria-labelledby="smarter-h">
+  <div class="wrap smarter-in">
+    <div class="smarter-intro reveal">
+      <p class="mono-label">Why Softano</p>
+      <h2 id="smarter-h" class="h2">A smarter way to <em>buy IT.</em></h2>
+      <p>Choose new or pre-owned for every licence, new or refurbished for every server, and talk to someone who knows both.</p>
+      <a class="text-link" href="#range">Explore the full range <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="soft-cards">
+      <article class="soft-card reveal">
+        <div class="sc-ui" aria-hidden="true">
+          <div class="mini-toggle"><span>New</span><span class="on">Pre-Owned</span></div>
+          <div class="mini-price"><b>€249.95</b><s>€579.95</s><em>−57%</em></div>
+          <small>Office 2024 Professional Plus</small>
+        </div>
+        <span class="icon-tile"><svg class="ic" aria-hidden="true"><use href="#i-key"/></svg></span>
+        <h3>Software licences</h3>
+        <p>Windows, Windows Server, SQL Server and Office. Perpetual or subscription, new or pre-owned.</p>
+        <a class="text-link" href="#range">Learn more <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="soft-card reveal">
+        <div class="sc-ui" aria-hidden="true">
+          <div class="grade-row"><span class="grade">A+ <small>as new</small></span><span class="grade g2">A <small>very good</small></span></div>
+          <div class="warranty-bar"><span style="width:33%">12</span><span>24</span><span>36 mo</span></div>
+        </div>
+        <span class="icon-tile"><svg class="ic" aria-hidden="true"><use href="#i-server"/></svg></span>
+        <h3>Server hardware</h3>
+        <p>Rack, tower and blade servers, storage and networking from HPE, Dell, Lenovo, Fujitsu and Supermicro.</p>
+        <a class="text-link" href="#hardware">Learn more <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="soft-card reveal">
+        <div class="sc-ui" aria-hidden="true">
+          <div class="chat-bubble"><span class="lang-stack sm"><span>DE</span><span>EN</span><span>EL</span></span>Which CALs do I need for 25 users?</div>
+          <small class="hours"><svg class="ic"><use href="#i-clock"/></svg>Mon to Fri, 10:00 to 18:00</small>
+        </div>
+        <span class="icon-tile"><svg class="ic" aria-hidden="true"><use href="#i-headset"/></svg></span>
+        <h3>Personal advice</h3>
+        <p>Licence advice before you buy and installation support after, from one contact person.</p>
+        <a class="text-link" href="#services">Learn more <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+    <ul class="benefits reveal" aria-label="Benefits">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Local presence in Germany and Greece</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg>Perpetual or subscription licences</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-server"/></svg>New or refurbished</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>Europe-wide B2B service</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-headset"/></svg>Personal support in German, English and Greek</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ DARK SECTION (Inspiration 2) ============ -->
+<section class="dark-sec" aria-labelledby="dark-h">
+  <div class="wrap">
+    <div class="dark-card">
+      <div class="dark-copy reveal">
+        <p class="mono-label inv">Pre-owned &amp; refurbished</p>
+        <h2 id="dark-h" class="condensed">Buy smarter.<br><span>Run stronger.</span></h2>
+        <p>A pre-owned licence has the same term and functionality as a new one. A refurbished server passes the same technical tests as an as-new unit. You pay less for both.</p>
+        <a class="btn btn-teal" href="#range">See pre-owned prices <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <figure class="dark-photo reveal">
+        <img src="assets/img/laptop-800.jpg" srcset="assets/img/laptop-800.jpg 800w, assets/img/laptop.jpg 1600w" sizes="(max-width: 900px) 100vw, 420px" alt="An IT administrator holding a tablet in a blue-lit server room" loading="lazy" width="800" height="534">
+        <div class="chip-float cf-1"><span class="cf-num">−52%</span><span>Pre-owned saving<small>Windows Server 2025 Std</small></span></div>
+        <div class="chip-float cf-2"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Licence key sent by email</span></div>
+      </figure>
+      <ul class="dark-stats reveal">
+        <li><span class="circ"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><div><b>Same term &amp; functionality</b><small>Pre-owned licences work exactly like new ones</small></div></li>
+        <li><span class="circ"><svg class="ic" aria-hidden="true"><use href="#i-chain"/></svg></span><div><b>Documented ownership</b><small>Every pre-owned licence has a chain of ownership</small></div></li>
+        <li><span class="circ"><svg class="ic" aria-hidden="true"><use href="#i-erase"/></svg></span><div><b>Data erasure record</b><small>With every refurbished system</small></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RANGE: Miter tabbed product sections ============ -->
+<section class="range" id="range" aria-labelledby="range-h">
+  <div class="wrap guides">
+    <div class="range-head reveal">
+      <p class="mono-label">The range</p>
+      <h2 class="h2" id="range-h">Everything your business runs on, <em>and what it runs on.</em></h2>
+    </div>
+    <ul class="pill-row reveal" aria-label="Product areas">
+      <li>Licences</li><li>Servers</li><li>Storage</li><li>Networking</li><li>Workstations</li>
+    </ul>
+
+    <div class="tabs" role="tablist" aria-label="Range">
+      <button role="tab" id="tab-sw" aria-controls="panel-sw" aria-selected="true"><svg class="ic" aria-hidden="true"><use href="#i-key"/></svg>Software</button>
+      <button role="tab" id="tab-hw" aria-controls="panel-hw" aria-selected="false" tabindex="-1"><svg class="ic" aria-hidden="true"><use href="#i-server"/></svg>Server hardware</button>
+      <button role="tab" id="tab-biz" aria-controls="panel-biz" aria-selected="false" tabindex="-1"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg>For business</button>
+    </div>
+
+    <!-- SOFTWARE -->
+    <div class="tab-panel" role="tabpanel" id="panel-sw" aria-labelledby="tab-sw" tabindex="0">
+      <div class="split">
+        <div class="split-copy">
+          <p class="sq-label"><i class="sq"></i>Software licences</p>
+          <h3>Microsoft licensing, new or pre-owned.</h3>
+          <p>Every licence is available first-hand or pre-owned. Pre-owned licences have the same term and functionality, with a documented chain of ownership.</p>
+          <div class="cat-cols">
+            <div>
+              <h4>Operating systems &amp; server licences</h4>
+              <ul><li><a href="#range">Windows 11 / 10</a></li><li><a href="#range">Windows Server</a></li><li><a href="#range">SQL Server</a></li><li><a href="#range">CALs for Windows Server, RDS and SQL</a></li></ul>
+            </div>
+            <div>
+              <h4>Office &amp; productivity</h4>
+              <ul><li><a href="#range">Office suites for Windows and Mac</a></li><li><a href="#range">Single Office apps</a></li><li><a href="#range">Project and Visio</a></li><li><a href="#range">Visual Studio</a></li></ul>
+            </div>
+            <div>
+              <h4>Virtualisation &amp; backup <span class="soon">Coming soon</span></h4>
+              <ul><li>VMware, Proxmox, Synology</li><li>Backup: Veeam, Acronis, Proxmox</li><li>Network &amp; security: LANCOM, Proxmox, Synology</li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="deep-panel dp-navy" aria-hidden="true">
+          <svg class="iso iso-a"><use href="#iso-rack"/></svg>
+          <div class="cert">
+            <p class="cert-head"><svg class="ic"><use href="#i-shield"/></svg>Licence record</p>
+            <dl>
+              <div><dt>Product</dt><dd>SQL Server 2022 Standard</dd></div>
+              <div><dt>Condition</dt><dd><span class="tag tag-teal">Pre-Owned (Volume)</span></dd></div>
+              <div><dt>Term</dt><dd>Same as new</dd></div>
+              <div><dt>Chain of ownership</dt><dd class="ok">Documented ✓</dd></div>
+              <div><dt>Delivery</dt><dd>Key + download link by email</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-bar">
+        <h3 class="pb-title">Popular licences</h3>
+        <div class="scribble scribble-products" aria-hidden="true"><span>flip it to compare</span><svg viewBox="0 0 120 60"><path d="M6 40C36 56 76 52 104 24"/><path d="M90 20l15 3-4 15"/></svg></div>
+        <div class="seg" role="group" aria-label="Condition">
+          <button type="button" aria-pressed="false" data-cond="new">New</button>
+          <button type="button" aria-pressed="true" data-cond="pre">Pre-Owned</button>
+        </div>
+      </div>
+      <p class="sr-only" aria-live="polite" data-cond-status>Showing pre-owned prices.</p>
+      <ul class="products" data-products>
+        <li class="product" data-new="1499.95" data-pre="719.95" data-new-label="New (CSP)" data-pre-label="Pre-Owned (Volume)">
+          <div class="p-visual pv-1" aria-hidden="true"><span class="pv-top">Windows Server</span><span class="pv-big">2025</span><span class="pv-sub">Standard · 16 Core</span></div>
+          <h4>Windows Server 2025 Standard, 16 Core</h4>
+          <p class="p-cond" data-label>Pre-Owned (Volume)</p>
+          <p class="p-price"><b data-price>€719.95</b> <s data-was>€1,499.95</s> <em class="save" data-save>Save 52%</em></p>
+          <p class="p-vat">incl. VAT · licence by email</p>
+          <a class="btn btn-navy btn-sm" href="#contact">View product</a>
+        </li>
+        <li class="product" data-new="579.95" data-pre="249.95" data-new-label="New" data-pre-label="Pre-Owned">
+          <div class="p-visual pv-2" aria-hidden="true"><span class="pv-top">Office</span><span class="pv-big">2024</span><span class="pv-sub">Professional Plus</span></div>
+          <h4>Office 2024 Professional Plus</h4>
+          <p class="p-cond" data-label>Pre-Owned</p>
+          <p class="p-price"><b data-price>€249.95</b> <s data-was>€579.95</s> <em class="save" data-save>Save 57%</em></p>
+          <p class="p-vat">incl. VAT · licence by email</p>
+          <a class="btn btn-navy btn-sm" href="#contact">View product</a>
+        </li>
+        <li class="product" data-new="879.95" data-pre="619.95" data-new-label="New (CSP)" data-pre-label="Pre-Owned (Volume)">
+          <div class="p-visual pv-3" aria-hidden="true"><span class="pv-top">SQL Server</span><span class="pv-big">2022</span><span class="pv-sub">Standard</span></div>
+          <h4>SQL Server 2022 Standard</h4>
+          <p class="p-cond" data-label>Pre-Owned (Volume)</p>
+          <p class="p-price"><b data-price>€619.95</b> <s data-was>€879.95</s> <em class="save" data-save>Save 30%</em></p>
+          <p class="p-vat">incl. VAT · licence by email</p>
+          <a class="btn btn-navy btn-sm" href="#contact">View product</a>
+        </li>
+        <li class="product" data-new="249.95" data-new-label="New">
+          <div class="p-visual pv-4" aria-hidden="true"><span class="pv-top">Windows</span><span class="pv-big">11</span><span class="pv-sub">Professional</span></div>
+          <h4>Windows 11 Professional</h4>
+          <p class="p-cond" data-label>New</p>
+          <p class="p-price"><b data-price>€249.95</b> <em class="note" data-save>Available new only</em></p>
+          <p class="p-vat">incl. VAT · licence by email</p>
+          <a class="btn btn-navy btn-sm" href="#contact">View product</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- HARDWARE -->
+    <div class="tab-panel" role="tabpanel" id="panel-hw" aria-labelledby="tab-hw" tabindex="0" hidden>
+      <div class="split">
+        <div class="split-copy">
+          <p class="sq-label"><i class="sq sq-teal"></i>Server hardware</p>
+          <h3>Servers, new or refurbished, configured for the job.</h3>
+          <p>Tell us what the server needs to run. We prepare a configuration and a quote. Refurbished systems come in Grade A+ (as new) or Grade A (very good), and both pass the same technical tests.</p>
+          <h4 class="mini-h">Categories</h4>
+          <ul class="tag-list">
+            <li><a href="#hardware">Rack servers</a></li><li><a href="#hardware">Tower servers</a></li><li><a href="#hardware">Blade servers &amp; chassis</a></li><li><a href="#hardware">Storage: NAS, SAN, tape</a></li><li><a href="#hardware">Networking</a></li><li><a href="#hardware">Racks &amp; UPS</a></li><li><a href="#hardware">Workstations</a></li><li><a href="#hardware">Microsoft Surface</a></li>
+          </ul>
+          <h4 class="mini-h">Manufacturers</h4>
+          <ul class="tag-list tl-plain"><li>HPE ProLiant</li><li>Dell PowerEdge</li><li>Lenovo ThinkSystem</li><li>Fujitsu PRIMERGY</li><li>Supermicro</li></ul>
+          <h4 class="mini-h">By application</h4>
+          <ul class="tag-list tl-plain"><li>Virtualisation</li><li>Databases</li><li>Terminal servers</li><li>Web applications</li><li>Backup</li><li>File &amp; print</li><li>GPU / AI / HPC</li></ul>
+          <div class="btn-row"><a class="btn btn-navy" href="#contact">Request a configuration</a><a class="btn btn-outline" href="#hardware">How refurbished works</a></div>
+        </div>
+        <div class="deep-panel dp-teal" aria-hidden="true">
+          <svg class="iso iso-b"><use href="#iso-rack"/></svg>
+          <div class="cert">
+            <p class="cert-head"><svg class="ic"><use href="#i-server"/></svg>Configuration request</p>
+            <dl>
+              <div><dt>Type</dt><dd>Rack server, 2U</dd></div>
+              <div><dt>Manufacturer</dt><dd>HPE ProLiant</dd></div>
+              <div><dt>Condition</dt><dd><span class="tag tag-teal">Refurbished · Grade A+</span></dd></div>
+              <div><dt>Use</dt><dd>Virtualisation</dd></div>
+              <div><dt>Warranty</dt><dd>12 months, extendable to 36</dd></div>
+              <div><dt>Data erasure record</dt><dd class="ok">Included ✓</dd></div>
+              <div><dt>Price</dt><dd><b>On request</b></dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUSINESS -->
+    <div class="tab-panel" role="tabpanel" id="panel-biz" aria-labelledby="tab-biz" tabindex="0" hidden>
+      <div class="split">
+        <div class="split-copy">
+          <p class="sq-label"><i class="sq"></i>For business</p>
+          <h3>Business terms, built into your account.</h3>
+          <ul class="check-list">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Up to 10% off</b> for registered business accounts, with discount tiers across the range</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>0% VAT</b> with a valid EU VAT ID registered outside Greece</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Quotes and framework agreements</b> for larger projects</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Pay on invoice</b>, B2B only and subject to credit approval</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Resellers</b> can order on behalf of their end customers</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Private customers</b> can order too, with prices including VAT</span></li>
+          </ul>
+          <div class="btn-row"><a class="btn btn-navy" href="#b2b">Open a business account</a><a class="btn btn-outline" href="#contact">Ask for a framework quote</a></div>
+        </div>
+        <div class="deep-panel dp-navy" aria-hidden="true">
+          <svg class="iso iso-a"><use href="#iso-stack"/></svg>
+          <div class="cert acct">
+            <p class="cert-head"><svg class="ic"><use href="#i-building"/></svg>B2B Connect · Account</p>
+            <dl>
+              <div><dt>Account type</dt><dd>Business</dd></div>
+              <div><dt>Discount tier</dt><dd><span class="tag tag-teal">−10%</span></dd></div>
+              <div><dt>VAT status</dt><dd>0% · EU VAT ID verified</dd></div>
+              <div><dt>Payment</dt><dd>On invoice</dd></div>
+              <div><dt>Ordering for</dt><dd>End customer (reseller)</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INBOX: Relume big rounded feature card + Insp 1 "in your hands" ============ -->
+<section class="inbox" aria-labelledby="inbox-h">
+  <div class="wrap">
+    <div class="feature-card reveal">
+      <div class="fc-copy">
+        <span class="icon-tile lg"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <p class="mono-label">Digital delivery</p>
+        <h2 class="h2" id="inbox-h">Your licence, <em>straight to your inbox.</em></h2>
+        <p>Order online or ask for a quote. Your key and download link arrive by email, and we stay on the line while you install.</p>
+        <div class="btn-row">
+          <a class="btn btn-navy" href="#range"><svg class="ic" aria-hidden="true"><use href="#i-key"/></svg>Browse licences</a>
+          <a class="btn btn-outline" href="#tools"><svg class="ic" aria-hidden="true"><use href="#i-calc"/></svg>Licensing calculator</a>
+        </div>
+        <ol class="steps">
+          <li><span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg></span><div><b>Order or request a quote</b><small>Online, by phone or by email</small></div></li>
+          <li><span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span><div><b>Key and download link by email</b><small>No shipping, no waiting for a box</small></div></li>
+          <li><span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-headset"/></svg></span><div><b>Step-by-step installation, with support</b><small>Activation help in DE, EN or EL</small></div></li>
+          <li><span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg></span><div><b>EU-compliant invoice</b><small>Ready for your accounts</small></div></li>
+        </ol>
+      </div>
+      <div class="fc-media">
+        <svg class="px px-media" aria-hidden="true"><use href="#px-stairs"/></svg>
+        <img src="assets/img/cables-800.jpg" srcset="assets/img/cables-800.jpg 800w, assets/img/cables.jpg 1600w" sizes="(max-width: 900px) 100vw, 620px" alt="Blue network cables connected to a server rack" loading="lazy" width="800" height="534">
+        <div class="mail-card" aria-hidden="true">
+          <div class="mc-head"><span class="mc-from"><img src="assets/symbol.svg" alt="" width="18" height="18">Softano.eu</span><small>just now</small></div>
+          <p class="mc-subj">Your licence: Windows Server 2025 Standard</p>
+          <p class="mc-lbl">Licence key</p>
+          <p class="mc-key">XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</p>
+          <div class="mc-btns"><span class="mc-btn"><svg class="ic"><use href="#i-download"/></svg>Download</span><span class="mc-btn ghost"><svg class="ic"><use href="#i-doc"/></svg>Install guide</span></div>
+        </div>
+        <div class="float-chip fc-invoice" aria-hidden="true"><svg class="ic"><use href="#i-doc"/></svg><span><b>EU invoice attached</b><small>invoice.pdf</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HARDWARE FEATURE (navy) ============ -->
+<section class="hw" id="hardware" aria-labelledby="hw-h">
+  <div class="wrap hw-in">
+    <figure class="hw-photo reveal">
+      <img src="assets/img/drives-800.jpg" srcset="assets/img/drives-800.jpg 800w, assets/img/drives.jpg 1600w" sizes="(max-width: 900px) 100vw, 640px" alt="Close-up of server drive bays with green status lights" loading="lazy" width="800" height="530">
+      <div class="grade-chip gc-1"><span class="gc-big">A+</span><span><b>Grade A+</b><small>As new</small></span></div>
+      <div class="grade-chip gc-2"><span class="gc-big">A</span><span><b>Grade A</b><small>Very good, light marks</small></span></div>
+      <div class="grade-chip gc-3"><svg class="ic" aria-hidden="true"><use href="#i-erase"/></svg><span><b>Data erasure record</b><small>Included</small></span></div>
+    </figure>
+    <div class="hw-copy reveal">
+      <p class="mono-label inv">Refurbished server hardware</p>
+      <h2 class="h2 inv" id="hw-h">Tested like new. <em>Graded honestly.</em></h2>
+      <p>Grade A+ and Grade A pass the same technical tests. The only difference is how they look.</p>
+      <ul class="check-list inv">
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Same technical tests for both grades</span></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Data erasure record with every refurbished system</span></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>12-month warranty, extendable to 24 or 36 months</span></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Shipped with DHL and UPS</span></li>
+      </ul>
+      <ol class="hw-steps">
+        <li><b>01</b>Order or request</li>
+        <li><b>02</b>Configuration &amp; quote</li>
+        <li><b>03</b>Testing &amp; dispatch</li>
+        <li><b>04</b>Invoice &amp; support</li>
+      </ol>
+      <div class="btn-row">
+        <a class="btn btn-teal" href="#range">Browse server hardware</a>
+        <a class="btn btn-ghost-inv" href="#contact">Request a quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROMISE: Roommaster big brand-blue card ============ -->
+<section class="promise" id="services" aria-labelledby="promise-h">
+  <div class="wrap">
+    <div class="promise-card reveal">
+      <svg class="px px-promise" aria-hidden="true"><use href="#px-stairs"/></svg>
+      <p class="mono-label inv">Our licence replacement promise</p>
+      <h2 class="promise-text" id="promise-h">If a licence key ever fails, we replace the licence. Before you buy, we advise. After you buy, we help you install and activate.</h2>
+      <div class="promise-foot">
+        <span class="lang-stack inv" aria-hidden="true"><span>DE</span><span>EN</span><span>EL</span></span>
+        <span><b>One contact person in three languages</b><small>Mon to Fri, 10:00 to 18:00 (Athens time)</small></span>
+      </div>
+    </div>
+    <ul class="service-cards">
+      <li class="reveal"><span class="icon-tile"><svg class="ic" aria-hidden="true"><use href="#i-headset"/></svg></span><b>Licence advice before purchase</b><small>Which edition, how many cores, which CALs</small></li>
+      <li class="reveal"><span class="icon-tile"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg></span><b>Installation &amp; activation support</b><small>Step by step, until it runs</small></li>
+      <li class="reveal"><span class="icon-tile"><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg></span><b>Licence replacement promise</b><small>If a key fails, you get a new licence</small></li>
+      <li class="reveal"><span class="icon-tile"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span><b>One contact in three languages</b><small>German, English and Greek</small></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TOOLS GRID: Miter "every piece in place" hairline grid ============ -->
+<section class="tools" id="tools" aria-labelledby="tools-h">
+  <div class="wrap guides">
+    <div class="tools-head reveal">
+      <p class="mono-label">Tools &amp; services</p>
+      <h2 class="h2" id="tools-h">One supplier, <em>every piece in place.</em></h2>
+    </div>
+    <div class="tool-grid">
+      <article class="tg-cell tg-calc reveal">
+        <p class="sq-label"><i class="sq"></i>Free licensing calculator</p>
+        <h3>A Windows Server and SQL Server quote in about 30 seconds.</h3>
+        <p>Five short steps: server, access licences, SQL, contact, summary.</p>
+        <a class="text-link" href="#contact">Open the calculator <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <div class="calc-ui" aria-hidden="true">
+          <ol class="calc-steps"><li class="done">Server</li><li class="done">Access licences</li><li class="cur">SQL</li><li>Contact</li><li>Summary</li></ol>
+          <div class="calc-rows">
+            <div><span>Windows Server 2025 Datacenter</span><b>16 cores</b></div>
+            <div><span>User CALs</span><b>25</b></div>
+            <div class="cur-row"><span>SQL Server 2022 Standard</span><b>8 cores</b></div>
+          </div>
+          <span class="calc-next">Next: contact <svg class="ic"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+      <article class="tg-cell tg-bundle reveal">
+        <svg class="iso iso-c" aria-hidden="true"><use href="#iso-stack"/></svg>
+        <p class="sq-label"><i class="sq sq-teal"></i>Complete Solutions</p>
+        <h3>Server, backup and security bundles.</h3>
+        <p>Pre-configured, and all on one invoice.</p>
+        <a class="text-link" href="#contact">Explore bundles <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="tg-cell tg-pay reveal">
+        <p class="sq-label"><i class="sq"></i>Payment &amp; shipping</p>
+        <h3>Pay the way your business pays.</h3>
+        <ul class="pay-list">
+          <li>PayPal</li><li>Visa</li><li>Mastercard</li><li>Apple Pay</li><li>Google Pay</li><li>Klarna</li><li>Revolut</li><li>Viva Wallet</li><li class="inv-pay">Invoice <small>B2B, after credit approval</small></li>
+        </ul>
+        <ul class="ship"><li><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg>Hardware ships with <b>DHL</b> and <b>UPS</b></li><li><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Licences arrive by email</li></ul>
+      </article>
+      <article class="tg-cell tg-photo reveal">
+        <img src="assets/img/support-800.jpg" alt="A support agent wearing a headset smiles at her desk" loading="lazy" width="800" height="534">
+        <div class="tgp-copy">
+          <p class="sq-label inv"><i class="sq sq-teal"></i>Installation support</p>
+          <h3>Stuck on activation? Call us.</h3>
+          <p><a href="tel:+498005885522">0800 588 55 22</a> <small>DE, toll-free</small><br><a href="tel:+302311181662">+30 2311 18 16 62</a> <small>GR / international</small></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ B2B with aisle photo ============ -->
+<section class="b2b" id="b2b" aria-labelledby="b2b-h">
+  <img class="b2b-bg" src="assets/img/aisle.jpg" alt="" loading="lazy" width="1600" height="920">
+  <div class="wrap b2b-in">
+    <div class="b2b-copy reveal">
+      <p class="mono-label inv">B2B &amp; Enterprise</p>
+      <h2 class="condensed sm" id="b2b-h">Buying for a company? <span>Open a business account.</span></h2>
+      <p>Discount tiers up to 10%, 0% VAT with a valid EU VAT ID outside Greece, pay on invoice after credit approval, quotes and framework agreements for larger projects. Resellers can order on behalf of their end customers.</p>
+      <div class="btn-row"><a class="btn btn-teal" href="#contact">Open a business account</a><a class="btn btn-ghost-inv" href="#contact">Log in to B2B Connect</a></div>
+    </div>
+    <div class="invoice reveal" aria-label="Example business checkout" role="img">
+      <div class="inv-head"><span><img src="assets/symbol.svg" alt="" width="20" height="20"> Invoice</span><span class="tag tag-teal">Pay on invoice</span></div>
+      <p class="inv-to">Bill to <b>[Your company]</b> · EU VAT ID verified</p>
+      <div class="inv-line"><span>Windows Server 2025 Standard, 16 Core<small>Pre-Owned (Volume) · 1 ×</small></span><b>€719.95</b></div>
+      <div class="inv-line teal"><span>Business discount 10%</span><b>−€72.00</b></div>
+      <div class="inv-line"><span>VAT 0% <small>Valid EU VAT ID outside Greece</small></span><b>€0.00</b></div>
+      <div class="inv-total"><span>Total due</span><b>€647.95</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ (Miter support layout) ============ -->
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap guides faq-in">
+    <div class="faq-side reveal">
+      <p class="mono-label">FAQ</p>
+      <h2 class="h2" id="faq-h">Questions, <em>answered.</em></h2>
+      <p>Not here? Call or email us. We answer in German, English and Greek.</p>
+      <figure class="faq-photo">
+        <img src="assets/img/typing-800.jpg" alt="Hands typing on a laptop at a bright desk" loading="lazy" width="800" height="534">
+        <figcaption><a href="mailto:support@softano.eu"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>support@softano.eu</a></figcaption>
+      </figure>
+    </div>
+    <div class="acc" data-accordion>
+      <div class="acc-item"><h3><button type="button" aria-expanded="true" aria-controls="f1" id="fb1">Who is Softano for?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f1" role="region" aria-labelledby="fb1"><p>Businesses and resellers across Europe. Private customers can order too, with prices shown including VAT.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f2" id="fb2">Is buying used software legal?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f2" role="region" aria-labelledby="fb2" hidden><p>Yes. Within the EU, used software licences may be resold, as the European Court of Justice confirmed in 2012. Every pre-owned licence comes with a documented chain of ownership.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f3" id="fb3">First-hand vs pre-owned: what is the difference?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f3" role="region" aria-labelledby="fb3" hidden><p>Both have the same licence term and functionality. A pre-owned licence had an earlier owner and comes with a documented chain of ownership.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f4" id="fb4">How are digital licences delivered?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f4" role="region" aria-labelledby="fb4" hidden><p>By email: your licence key and download link, with step-by-step installation support.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f5" id="fb5">What do the refurbished grades A+ and A mean?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f5" role="region" aria-labelledby="fb5" hidden><p>Both pass the same technical tests. A+ looks as new, A may show light cosmetic marks.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f6" id="fb6">Can refurbished servers be configured?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f6" role="region" aria-labelledby="fb6" hidden><p>Yes. Send a request and we prepare a configuration and quote.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f7" id="fb7">What warranty does hardware have?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f7" role="region" aria-labelledby="fb7" hidden><p>12 months on every refurbished system, extendable to 24 or 36 months.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f8" id="fb8">How long is delivery?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f8" role="region" aria-labelledby="fb8" hidden><p>Licences arrive by email. Hardware ships with DHL or UPS. <span class="ph">[placeholder: exact delivery times from the current FAQ]</span></p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f9" id="fb9">Can I buy without VAT?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f9" role="region" aria-labelledby="fb9" hidden><p>Yes, as a business with a valid EU VAT ID registered outside Greece.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f10" id="fb10">Are there volume discounts?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f10" role="region" aria-labelledby="fb10" hidden><p>Registered business customers get up to 10% off, with discount tiers across the range.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f11" id="fb11">Can I order as a reseller for end customers?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f11" role="region" aria-labelledby="fb11" hidden><p>Yes.</p></div></div>
+      <div class="acc-item"><h3><button type="button" aria-expanded="false" aria-controls="f12" id="fb12">What are the return and withdrawal rights?<svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="acc-body" id="f12" role="region" aria-labelledby="fb12" hidden><p>14 days for hardware. For digital licences, the right of withdrawal ends once you agree to immediate delivery.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact-in">
+    <div class="contact-info reveal">
+      <p class="mono-label">Contact</p>
+      <h2 class="h2" id="contact-h">Request a quote.</h2>
+      <p>Tell us what you need: licences, a server configuration or a bundle. We reply with a quote.</p>
+      <ul class="contact-list">
+        <li><span class="icon-tile sm"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><div><small>Germany, toll-free</small><a href="tel:+498005885522">0800 588 55 22</a></div></li>
+        <li><span class="icon-tile sm"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><div><small>Greece &amp; international</small><a href="tel:+302311181662">+30 2311 18 16 62</a></div></li>
+        <li><span class="icon-tile sm"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span><div><small>Email</small><a href="mailto:support@softano.eu">support@softano.eu</a></div></li>
+        <li><span class="icon-tile sm"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span><div><small>Hours</small><span>Mon to Fri, 10:00 to 18:00 (Athens time)</span></div></li>
+        <li><span class="icon-tile sm"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span><div><small>Languages</small><span>German, English, Greek</span></div></li>
+      </ul>
+    </div>
+    <form class="quote-form reveal" data-quote novalidate>
+      <div class="qf-row">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization"></div>
+      </div>
+      <div class="qf-row">
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <fieldset class="field">
+        <legend>I am interested in</legend>
+        <div class="radio-pills">
+          <label><input type="radio" name="topic" value="software" checked><span>Software licences</span></label>
+          <label><input type="radio" name="topic" value="hardware"><span>Server hardware</span></label>
+          <label><input type="radio" name="topic" value="bundle"><span>A bundle</span></label>
+        </div>
+      </fieldset>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="e.g. Windows Server 2025 Datacenter, 16 cores + 25 user CALs"></textarea></div>
+      <button class="btn btn-navy btn-block" type="submit">Request a Quote <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CTA BAND (Insp 1 + hand-drawn note from Insp 2) ============ -->
+<section class="cta" aria-labelledby="cta-h">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <svg class="px px-cta-l" aria-hidden="true"><use href="#px-stairs"/></svg>
+      <svg class="px px-cta-r" aria-hidden="true"><use href="#px-stairs"/></svg>
+      <p class="mono-label">Ready to start?</p>
+      <h2 id="cta-h">Turn your IT plans into <em>what runs next.</em></h2>
+      <div class="btn-row center">
+        <a class="btn btn-navy" href="#range">Browse Products <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-white" href="#contact">Request a Quote</a>
+      </div>
+      <div class="scribble scribble-cta" aria-hidden="true">
+        <span>a real person picks up</span>
+        <svg viewBox="0 0 120 80"><path d="M110 10C92 40 62 58 20 60"/><path d="M30 48 18 60l13 10"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand inv" href="#top">
+          <img src="assets/symbol.svg" width="34" height="34" alt="">
+          <span class="brand-text"><span class="brand-name">Softano<span class="brand-tld">.eu</span></span><span class="brand-tag">Software &amp; Servers 24h</span></span>
+        </a>
+        <address>Softano Enterprise Solutions IKE<br>Steliou Kazantzidi 47<br>57001 Thermi, Greece</address>
+        <p class="foot-contact"><a href="tel:+498005885522">0800 588 55 22</a> <small>DE, toll-free</small><br><a href="tel:+302311181662">+30 2311 18 16 62</a> <small>GR / international</small><br><a href="mailto:support@softano.eu">support@softano.eu</a></p>
+      </div>
+      <nav class="foot-cols" aria-label="Footer">
+        <div><h2>Shop</h2><ul><li><a href="#range">Operating Systems &amp; Server</a></li><li><a href="#range">Office &amp; Productivity</a></li><li><a href="#range">Virtualisation &amp; Backup</a></li><li><a href="#hardware">Server Hardware</a></li><li><a href="#tools">Business Solution Bundles</a></li></ul></div>
+        <div><h2>Tools</h2><ul><li><a href="#faq">Licence Verification</a></li><li><a href="#tools">Licensing Advisor</a></li><li><a href="#services">Installation Support</a></li><li><a href="#top" data-focus-search>Product Search</a></li><li><a href="#b2b">My Account</a></li></ul></div>
+        <div><h2>Company</h2><ul><li><a href="#contact">About Us</a></li><li><a href="#partners">Partners &amp; Manufacturers</a></li><li><a href="#b2b">B2B &amp; Enterprise</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div><h2>Legal</h2><ul><li><a href="#top">Terms</a></li><li><a href="#top">Privacy Policy</a></li><li><a href="#top">Delivery &amp; Payment</a></li><li><a href="#top">Refund Policy</a></li><li><a href="#top">EU guarantee notice</a></li><li><a href="#top">Imprint</a></li><li><a href="#top">Report Abuse</a></li><li><a href="#top">Cookie Settings</a></li></ul></div>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Softano Enterprise Solutions IKE</p>
+      <p class="foot-pay">PayPal · Visa · Mastercard · Apple Pay · Google Pay · Klarna · Revolut · Viva Wallet · Invoice (B2B)</p>
+      <p class="credit">Photos: Unsplash (server drives by Domaintechnik)</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
