@@ -1,14 +1,21 @@
 # Softano.eu homepage concept
 
-Free homepage concept for softano.eu by Dygram Design. Static site: `index.html`, `styles.css`, `script.js`, `assets/`.
-Deploys on Vercel with zero config.
+Homepage redesign concept for softano.eu by Dygram Design. Static site: `index.html`, `styles.css`, `script.js`, `assets/`. Deploys on Vercel with zero config.
+
+## Content source
+All text, products, prices, SKUs and FAQ answers are taken from the current softano.eu homepage (November 2026).
+Images reused from the current site: product pack shots (`assets/products`), hardware photos and manufacturer logos (`assets/hardware`), partner logos (`assets/partners`), payment and shipping logos (`assets/payment`).
+Added photos (Unsplash, free licence): server room, cables, drives, aisle.
+
+## Deliberate differences from the current site
+- "Official Microsoft Partner" badge and "Microsoft Partner advice" removed (not backed up on the site)
+- SOFORT and giropay logos removed (giropay has shut down, SOFORT is now part of Klarna)
+- Duplicate "Popular Hardware" list (it repeated the software products) replaced by the hardware range
+- British spelling throughout (licence, virtualisation)
+- Visible text is English only; the EN / DE / EL switcher is visual
 
 ## Open items for the client
-- Real partner logos (the partner grid uses text wordmarks for now).
-- Exact delivery times for the FAQ (marked `[placeholder]`).
-- Approval of the legal FAQ answer about reselling used licences.
-- Surgena font licence (personal use only) must be checked before the logo is used commercially. The site uses Plus Jakarta Sans, Archivo, JetBrains Mono and Caveat (Google Fonts).
-- The quote form is not connected to a backend yet.
-
-## Photos
-Unsplash (free licence): wocintechchat (laptop), Scott Rodgerson (cables), Domaintechnik (drives, credit requested), İsmail Enes Ayhan (aisle), BaljkanN4 (support), Selina (typing).
+- Approval of the legal wording about reselling used software
+- Surgena font licence (personal use only) must be checked before the logo is used commercially
+- Hardware sections are still marked "Available soon" on the live shop; the concept shows them as ready
+- The quote form and calculator link to email for now

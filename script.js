@@ -67,47 +67,37 @@
     }));
   }
 
-  /* ---------- New / Pre-Owned toggle ---------- */
+  /* ---------- New / Pre-Owned toggle: swaps each product to its New or Pre-Owned SKU ---------- */
   const seg = document.querySelectorAll('.seg button');
   const status = document.querySelector('[data-cond-status]');
+  const setText = (el, text) => { if (!el) return; el.textContent = text || ''; el.hidden = !text; };
   const applyCondition = (mode) => {
     document.querySelectorAll('[data-products] .product').forEach((p) => {
-      const nw = parseFloat(p.dataset.new);
-      const pre = p.dataset.pre ? parseFloat(p.dataset.pre) : null;
-      const priceEl = p.querySelector('[data-price]');
-      const wasEl = p.querySelector('[data-was]');
-      const saveEl = p.querySelector('[data-save]');
+      const v = JSON.parse(p.dataset.variants);
+      const only = !v[mode];
+      const d = v[mode] || v.new || v.pre;
       const label = p.querySelector('[data-label]');
-      if (pre === null) {
-        // Available new only: keep the note visible in both modes
-        priceEl.textContent = eur(nw);
-        label.textContent = p.dataset.newLabel;
-        if (saveEl) saveEl.hidden = mode !== 'pre';
-        return;
-      }
-      if (mode === 'pre') {
-        priceEl.textContent = eur(pre);
-        wasEl.textContent = eur(nw);
-        wasEl.hidden = false;
-        saveEl.textContent = 'Save ' + Math.round((1 - pre / nw) * 100) + '%';
-        saveEl.hidden = false;
-        label.textContent = p.dataset.preLabel;
-      } else {
-        priceEl.textContent = eur(nw);
-        wasEl.hidden = true;
-        saveEl.hidden = true;
-        label.textContent = p.dataset.newLabel;
-      }
-      priceEl.classList.remove('price-flash');
-      void priceEl.offsetWidth;
-      priceEl.classList.add('price-flash');
+      label.textContent = d.label + (only ? (v.new ? ' only' : ' only') : '');
+      label.className = 'p-badge ' + (d.label === 'New' ? 'new' : 'pre');
+      p.querySelector('[data-name]').textContent = d.name;
+      p.querySelector('[data-sku]').textContent = d.sku;
+      const img = p.querySelector('[data-img]');
+      if (img.getAttribute('src') !== d.img) img.setAttribute('src', d.img);
+      const price = p.querySelector('[data-price]');
+      price.textContent = d.price;
+      setText(p.querySelector('[data-was]'), d.was);
+      setText(p.querySelector('[data-low]'), d.low ? 'Lowest price in 30 days: ' + d.low : '');
+      p.classList.toggle('is-other', only);
+      price.classList.remove('price-flash'); void price.offsetWidth; price.classList.add('price-flash');
     });
-    if (status) status.textContent = mode === 'pre' ? 'Showing pre-owned prices.' : 'Showing new prices.';
+    if (status) status.textContent = mode === 'pre' ? 'Showing pre-owned licences.' : 'Showing new licences.';
   };
   seg.forEach((btn) => btn.addEventListener('click', () => {
     seg.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
     applyCondition(btn.dataset.cond);
   }));
+  const initial = document.querySelector('.seg [aria-pressed="true"]');
+  if (initial) applyCondition(initial.dataset.cond);
 
   /* ---------- Tabs (WAI-ARIA tabs pattern) ---------- */
   const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
