@@ -1648,9 +1648,9 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 /* =========================================================
    Subtle background texture (solid colours only, PDF-safe)
    ========================================================= */
-body { background: var(--page) url("assets/brand/dots.svg") 0 0 / 22px 22px repeat; }
+body { background: var(--page) url("assets/brand/pat-grid.svg") 0 0 / 96px 96px repeat; }
 .hero, .partners, .promise, .sw-range, .popular, .how, .faq, .cta, .condition, .bundles, .inbox { background-color: transparent !important; background-image: none; }
-.hw-range { background: #fff url("assets/brand/dots-white.svg") 0 0 / 22px 22px repeat; }
+.hw-range { background: #fff url("assets/brand/pat-grid-white.svg") 0 0 / 96px 96px repeat; }
 
 /* large S-frame outlines as quiet watermarks */
 .sw-range, .popular, .how, .faq, .hw-range { position: relative; overflow: hidden; }
@@ -1665,3 +1665,7 @@ body { background: var(--page) url("assets/brand/dots.svg") 0 0 / 22px 22px repe
   .popular::before, .hw-range::before { display: none; }
   .how::before { width: 300px; right: -170px; top: 0; }
 }
+
+/* background texture: blueprint grid instead of dots */
+body { background: var(--page) url("assets/brand/pat-grid.svg") 0 0 / 96px 96px repeat; }
+.hw-range { background: #fff url("assets/brand/pat-grid-white.svg") 0 0 / 96px 96px repeat; }
