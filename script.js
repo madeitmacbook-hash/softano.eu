@@ -38,10 +38,13 @@
     if (open) q.focus();
   };
   toggle.addEventListener('click', () => setSearch(bar.hidden));
+  const q2 = document.getElementById('q2');
+  const inlineSearchVisible = () => q2 && q2.offsetParent !== null;
   document.querySelectorAll('[data-focus-search]').forEach((el) => el.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    setSearch(true);
+    if (inlineSearchVisible()) setTimeout(() => q2.focus({ preventScroll: true }), 300);
+    else setSearch(true);
   }));
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !bar.hidden) { setSearch(false); toggle.focus(); }
