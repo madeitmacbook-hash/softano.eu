@@ -1491,3 +1491,15 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 
 /* contact band: the S as a soft watermark */
 .cta-symbol { opacity: .14; }
+
+/* hero: brand rack pattern peeking out behind the photo */
+.hero-media::before {
+  content: "" !important; display: block !important;
+  position: absolute; z-index: -1; top: -36px; right: -36px; left: auto; bottom: auto;
+  width: 78%; height: 72%; aspect-ratio: auto; border-radius: 28px;
+  background: url("assets/brand/rack-navy-strong.svg") 0 0 / 44px 22px repeat !important;
+  opacity: 1;
+  -webkit-mask-image: radial-gradient(120% 120% at 100% 0%, #000 45%, transparent 80%);
+          mask-image: radial-gradient(120% 120% at 100% 0%, #000 45%, transparent 80%);
+}
+@media (max-width: 900px) { .hero-media::before { top: -18px; right: -14px; } }
