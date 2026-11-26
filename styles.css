@@ -1711,3 +1711,27 @@ body { background: var(--page) !important; }
   .how::before { width: 300px; right: -170px; top: 0; }
   .popular::before, .hw-range::before { display: none; }
 }
+
+/* =========================================================
+   Pattern: server-rack lines (thin rack units with status lights)
+   used in three places only; replaces the S outlines
+   ========================================================= */
+.sw-range::before, .popular::before, .how::before, .hw-range::before { content: none !important; display: none !important; }
+.hero-media::before { content: none !important; display: none !important; }
+.hero { position: relative; overflow: hidden; }
+.hero::before { content: "" !important; display: block !important; position: absolute; z-index: 0; pointer-events: none;
+  right: 0; top: 0; bottom: 0; left: auto; width: 52%; height: auto;
+  background: url("assets/brand/rackline.svg") 0 0 / 420px 34px repeat;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 45%); mask-image: linear-gradient(90deg, transparent, #000 45%); }
+.hero > .wrap { position: relative; z-index: 1; }
+.sw-range::after, .how::after { content: ""; position: absolute; z-index: 0; pointer-events: none; left: 0; right: 0; top: 0; height: 136px;
+  background: url("assets/brand/rackline.svg") 0 0 / 420px 34px repeat;
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent); mask-image: linear-gradient(180deg, #000, transparent); }
+@media (max-width: 900px) {
+  .hero::before { width: 100%; top: auto; height: 62%; -webkit-mask-image: linear-gradient(180deg, transparent, #000 40%); mask-image: linear-gradient(180deg, transparent, #000 40%); }
+  .sw-range::after, .how::after { height: 90px; }
+}
+@media (max-width: 900px) {
+  .hero::before { display: none !important; }
+  .sw-range::after, .how::after { background-position: -170px 0; }
+}
