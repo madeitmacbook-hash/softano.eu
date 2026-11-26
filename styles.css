@@ -1485,3 +1485,6 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 .bc-pay b { display: block; font-size: 14px; }
 .bc-pay small { color: var(--teal-dark); font-size: 12px; font-weight: 600; }
 @media (max-width: 900px) { .b2b-checkout { justify-self: start; } }
+
+/* hero: no decorative block behind the photo */
+.hero-media::before { content: none !important; display: none !important; }
