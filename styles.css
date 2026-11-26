@@ -559,12 +559,9 @@ small { font-size: .85em; }
 .foot-bottom { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: space-between; padding-top: 24px; font-size: 13px; }
 .foot-pay { color: #8FA2CF; }
 
-/* ---------- Reveal ---------- */
-.reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
-.reveal.in { opacity: 1; transform: none; }
+/* ---------- Motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
@@ -664,6 +661,20 @@ small { font-size: .85em; }
 /* cta */
 .cta-band { border: 0; border-radius: 36px; }
 
+/* ---------- Search bar under the nav ---------- */
+.searchbar { border-top: 1px solid var(--line); background: #fff; padding: 14px 0 16px; }
+.searchbar .search { margin: 0 auto; max-width: 720px; }
+
+/* ---------- Calmer hero ---------- */
+.hero::before { display: none; }
+.hero-in { padding-top: 88px; padding-bottom: 80px; gap: 72px; }
+.hero .kicker { margin-bottom: 22px; }
+.hero-lead { margin-top: 26px; max-width: 460px; }
+.hero .btn-row { margin-top: 34px; }
+.trust { margin-top: 40px; padding-top: 0; border-top: 0; }
+.hero-media::before { top: -28px; right: -28px; width: 55%; }
+.showcase-wrap { margin-top: 24px; }
+
 /* =========================================================
    Responsive
    ========================================================= */
@@ -698,7 +709,7 @@ small { font-size: .85em; }
 }
 @media (max-width: 900px) {
   :root { --gutter: 20px; }
-  .hero-in { grid-template-columns: 1fr; padding-top: 44px; }
+  .hero-in { grid-template-columns: 1fr; padding-top: 52px; padding-bottom: 64px; gap: 56px; }
   .hero-media { max-width: 560px; }
   .hero-media > img { aspect-ratio: 4 / 3.4; }
   .price-card { left: 12px; bottom: -28px; }

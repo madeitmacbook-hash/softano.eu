@@ -116,11 +116,21 @@
       </ul>
     </nav>
     <div class="nav-actions">
-      <button class="icon-btn" type="button" aria-label="Search the shop" data-focus-search><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></button>
+      <button class="icon-btn" type="button" aria-label="Search the shop" aria-expanded="false" aria-controls="searchbar" data-search-toggle><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></button>
       <a class="icon-btn" href="#range" aria-label="Cart, 0 items"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg><span class="cart-count" aria-hidden="true">0</span></a>
       <a class="btn btn-outline btn-sm hide-sm" href="#b2b"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg>B2B Connect</a>
       <a class="btn btn-navy btn-sm hide-md" href="#contact">Request a Quote</a>
       <button class="icon-btn burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="searchbar" id="searchbar" hidden>
+    <div class="wrap">
+      <form class="search" role="search" action="#range" data-search>
+          <label class="sr-only" for="q">Search licences and hardware</label>
+          <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="q" name="q" type="search" autocomplete="off" placeholder="Search licences and servers">
+          <button type="submit">Search</button>
+        </form>
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu" hidden>
@@ -155,32 +165,20 @@
 <section class="hero">
   <div class="wrap hero-in">
     <div class="hero-copy">
-      <p class="kicker reveal">Software licences &amp; server hardware for business</p>
-      <h1 class="hero-title reveal">Software licences<br>and servers,<br><span>from one source.</span></h1>
-      <p class="hero-lead reveal">Windows Server, SQL Server and Office, new or pre-owned. Rack servers, storage and networking, new or refurbished. For businesses across Europe.</p>
-      <div class="btn-row reveal">
+      <p class="kicker">For businesses across Europe</p>
+      <h1 class="hero-title">Software licences<br>and servers,<br><span>from one source.</span></h1>
+      <p class="hero-lead">Windows Server, SQL Server and Office, new or pre-owned. Servers, storage and networking, new or refurbished.</p>
+      <div class="btn-row">
         <a class="btn btn-navy" href="#range">Browse Products</a>
         <a class="btn btn-outline" href="#contact">Request a Quote</a>
       </div>
-      <form class="search reveal" role="search" action="#range" data-search>
-        <label class="sr-only" for="q">Search licences and hardware</label>
-        <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
-        <input id="q" name="q" type="search" autocomplete="off" placeholder="Search licences and servers">
-        <button type="submit">Search</button>
-      </form>
-      <p class="popular reveal">Popular:
-        <button type="button" data-fill="Windows Server 2025">Windows Server 2025</button>,
-        <button type="button" data-fill="Office 2024 Professional Plus">Office 2024</button>,
-        <button type="button" data-fill="SQL Server 2022">SQL Server 2022</button>,
-        <button type="button" data-fill="Refurbished rack server">rack servers</button>
-      </p>
-      <div class="trust reveal">
+      <div class="trust">
         <span class="lang-stack" aria-hidden="true"><span>DE</span><span>EN</span><span>EL</span></span>
         <span>Personal advice in German, English and Greek<br><a href="tel:+498005885522">0800 588 55 22</a> <small>toll-free from Germany</small></span>
       </div>
     </div>
 
-    <figure class="hero-media reveal">
+    <figure class="hero-media">
       <img src="assets/img/laptop.jpg" srcset="assets/img/laptop-800.jpg 800w, assets/img/laptop.jpg 1600w" sizes="(max-width: 900px) 100vw, 640px" alt="An IT administrator holding a tablet in a blue-lit server room" width="1600" height="1068" fetchpriority="high">
       <div class="price-card">
         <p class="pc-cat">Digital licence · Windows Server</p>
@@ -189,8 +187,6 @@
         <div class="pc-row on"><span>Pre-Owned (Volume)</span><b>€719.95</b><em>−52%</em></div>
         <p class="pc-foot">incl. VAT · key and download link by email</p>
       </div>
-      <div class="annot an-1" aria-hidden="true"><span>Same term and functionality</span></div>
-      <div class="annot an-2" aria-hidden="true"><span>Documented chain of ownership</span></div>
       <div class="scribble sc-hero" aria-hidden="true">
         <span>same licence,<br>half the price</span>
         <svg viewBox="0 0 90 60"><path d="M6 8c22 2 44 14 56 38"/><path d="M50 40l12 8 4-14"/></svg>

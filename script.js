@@ -28,17 +28,23 @@
     btn.addEventListener('click', () => all.forEach((b) => b.setAttribute('aria-pressed', String(b === btn))));
   });
 
-  /* ---------- Search box ---------- */
+  /* ---------- Search bar (drops down under the nav) ---------- */
   const q = document.getElementById('q');
-  document.querySelectorAll('[data-fill]').forEach((chip) => {
-    chip.addEventListener('click', () => { q.value = chip.dataset.fill; q.focus(); });
-  });
-  document.querySelectorAll('[data-focus-search]').forEach((el) => {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-      setTimeout(() => q && q.focus({ preventScroll: true }), 300);
-    });
+  const bar = document.getElementById('searchbar');
+  const toggle = document.querySelector('[data-search-toggle]');
+  const setSearch = (open) => {
+    bar.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) q.focus();
+  };
+  toggle.addEventListener('click', () => setSearch(bar.hidden));
+  document.querySelectorAll('[data-focus-search]').forEach((el) => el.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    setSearch(true);
+  }));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !bar.hidden) { setSearch(false); toggle.focus(); }
   });
 
   /* ---------- Showcase: condition picker updates the order summary ---------- */
@@ -165,17 +171,4 @@
     });
   }
 
-  /* ---------- Scroll reveal ---------- */
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const items = document.querySelectorAll('.reveal');
-  if (reduce || !('IntersectionObserver' in window)) {
-    items.forEach((el) => el.classList.add('in'));
-  } else {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((en) => {
-        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    items.forEach((el) => io.observe(el));
-  }
 })();
