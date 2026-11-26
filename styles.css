@@ -1503,3 +1503,8 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
           mask-image: radial-gradient(120% 120% at 100% 0%, #000 45%, transparent 80%);
 }
 @media (max-width: 900px) { .hero-media::before { top: -18px; right: -14px; } }
+
+/* hardware & manufacturer tiles: clearly visible boxes on the white band */
+.hw-tiles a, .mfr-tiles a { background: #F1F5FE; border: 1.5px solid #D5DFF3; }
+.hw-tiles a:hover, .mfr-tiles a:hover { background: #fff; border-color: var(--navy); box-shadow: var(--soft); }
+.hw-range .tag-list a { border: 1.5px solid #D5DFF3; }
