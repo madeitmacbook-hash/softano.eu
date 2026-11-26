@@ -687,6 +687,102 @@ small { font-size: .85em; }
   .price-card { bottom: clamp(16px, 3.5vh, 32px); }
 }
 
+/* ---------- Height-aware sizing for every section (desktop and laptops) ---------- */
+@media (min-width: 901px) {
+  :root {
+    --sec-pad: clamp(52px, 11vh, 96px);
+    --fit: calc(100vh - 74px - 40px);
+    --fit: calc(100svh - 74px - 40px);
+    --blk-pad: clamp(30px, 6.5vh, 64px);
+  }
+  /* section rhythm follows screen height */
+  .partners .wrap { padding-top: clamp(40px, 8vh, 64px); padding-bottom: clamp(36px, 7vh, 56px); }
+  .statement .wrap { padding-bottom: var(--sec-pad); }
+  .smarter { padding: var(--sec-pad) 0; }
+  .dark-sec { padding-bottom: var(--sec-pad); }
+  .range > .wrap { padding-top: var(--sec-pad); padding-bottom: var(--sec-pad); }
+  .inbox { padding: var(--sec-pad) 0; }
+  .hw { padding-bottom: var(--sec-pad); }
+  .tools > .wrap { padding-top: var(--sec-pad); padding-bottom: var(--sec-pad); }
+  .b2b { padding: var(--sec-pad) 0; }
+  .faq-in { padding-top: var(--sec-pad); padding-bottom: var(--sec-pad); }
+  .contact { padding: var(--sec-pad) 0; }
+  .cta { padding: var(--sec-pad) 0; }
+
+  /* headings scale with the smaller of width and height */
+  .h2 { font-size: clamp(28px, min(3.4vw, 5.8vh), 46px); }
+  .condensed { font-size: clamp(42px, min(6vw, 10.5vh), 86px); }
+  .two-tone { font-size: clamp(22px, min(2.6vw, 4.4vh), 34px); }
+  .stats dd { font-size: clamp(34px, min(4.2vw, 7vh), 56px); }
+  .promise-text { font-size: clamp(26px, min(3.2vw, 5.4vh), 42px); }
+  .cta-band h2 { font-size: clamp(30px, min(4.2vw, 7.4vh), 56px); }
+  .split-copy h3 { font-size: clamp(22px, min(2.4vw, 4.4vh), 32px); }
+
+  /* dark panel: photo never taller than the screen */
+  .dark-card { padding-top: var(--blk-pad); padding-bottom: var(--blk-pad); }
+  .dark-copy p { margin: clamp(14px, 3vh, 22px) 0 clamp(18px, 3.6vh, 28px); }
+  .dark-photo img { max-height: calc(var(--fit) - 2 * var(--blk-pad)); }
+  .dark-stats { gap: clamp(14px, 3vh, 24px); }
+  .dark-stats li { padding-bottom: clamp(12px, 2.6vh, 22px); }
+
+  /* product tabs: wider copy column, compact category lists */
+  .split { grid-template-columns: 1.3fr 1fr; min-height: min(500px, var(--fit)); }
+  .split-copy { padding: var(--blk-pad) 44px; }
+  .split-copy > p { margin: clamp(10px, 2vh, 14px) 0 clamp(14px, 3vh, 24px); }
+  .cat-cols { grid-template-columns: repeat(3, 1fr); gap: 20px 24px; padding-top: clamp(14px, 2.6vh, 22px); }
+  .cat-cols li { padding: 2px 0; }
+  .mini-h { margin-top: clamp(14px, 2.6vh, 22px); }
+
+  /* licence delivery card: steps in two columns, media fits the screen */
+  .fc-copy { padding: var(--blk-pad) 24px var(--blk-pad) 32px; }
+  .fc-copy > p { margin-top: clamp(10px, 2vh, 16px); }
+  .feature-card .btn-row { margin-top: clamp(16px, 3.4vh, 28px); }
+  .steps { margin-top: clamp(18px, 3.6vh, 32px); display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
+  .steps li { padding: clamp(9px, 1.8vh, 13px) 0; }
+  .fc-media { min-height: clamp(380px, calc(var(--fit) - 32px), 540px); }
+
+  /* hardware panel: photo capped to the screen, tighter copy */
+  .hw-in { padding-top: var(--blk-pad); padding-bottom: var(--blk-pad); }
+  .hw-photo img { aspect-ratio: auto; height: min(560px, calc(var(--fit) - 2 * var(--blk-pad))); }
+  .hw-copy > p:not(.kicker) { margin: clamp(10px, 2vh, 16px) 0 4px; }
+  .hw .check-list { gap: clamp(6px, 1.4vh, 12px); margin-top: clamp(12px, 2.4vh, 20px); }
+  .hw-steps { margin-top: clamp(16px, 3.4vh, 30px); }
+  .hw .btn-row { margin-top: clamp(16px, 3.4vh, 28px); }
+
+  /* promise, cta, contact */
+  .promise-card { padding-top: var(--blk-pad); padding-bottom: var(--blk-pad); }
+  .service-list { margin-top: clamp(20px, 4vh, 36px); }
+  .cta-band { padding-top: var(--blk-pad); padding-bottom: var(--blk-pad); }
+  .quote-form { padding: clamp(20px, 4vh, 30px) 30px; gap: clamp(10px, 2vh, 16px); }
+  .contact-info > p { margin: clamp(10px, 2vh, 16px) 0 clamp(16px, 3.4vh, 28px); }
+  .contact-list > div { padding: clamp(8px, 1.6vh, 13px) 0; }
+
+  /* photos elsewhere */
+  .b2b-in { min-height: 0; }
+  .tg-photo img { max-height: calc(var(--fit) - 40px); }
+}
+
+@media (min-width: 901px) {
+  .fc-copy { padding-top: clamp(22px, 4.4vh, 64px); padding-bottom: clamp(22px, 4.4vh, 64px); }
+  .feature-card .h2 { font-size: clamp(26px, min(3vw, 5.2vh), 44px); }
+  .steps small { font-size: 13px; }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .dark-card { gap: 32px; }
+  .dark-photo img { max-height: calc(var(--fit) - 2 * var(--blk-pad) - 150px); }
+  .dark-stats small { display: none; }
+  .hw-in { grid-template-columns: 1fr 1.25fr; gap: 40px; }
+  .hw-copy > p:not(.kicker) { font-size: 15.5px; }
+  .feature-card { grid-template-columns: 1.2fr 1fr; }
+  .fc-copy { padding-left: 22px; padding-right: 14px; }
+  .fc-copy > p { font-size: 15px; }
+  .smarter-intro { display: grid; grid-template-columns: 1fr 1.2fr; column-gap: 40px; align-items: end; }
+  .smarter-intro p { margin: 0; }
+  .smarter-intro .text-link { grid-column: 2; margin-top: 10px; }
+  .soft-card p { font-size: 14px; }
+  .sc-ui { height: clamp(96px, 17vh, 130px); }
+}
+
 /* =========================================================
    Responsive
    ========================================================= */
