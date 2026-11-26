@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/symbol.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,600..900&family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,600..900&family=Outfit:wght@500;600;700&family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -46,15 +46,6 @@
     <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
     <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
-
-    <!-- Relume style pixel-block stairs -->
-    <symbol id="px-stairs" viewBox="0 0 112 112">
-      <rect x="0" y="0" width="16" height="16"/><rect x="0" y="16" width="16" height="16"/><rect x="16" y="16" width="16" height="16"/>
-      <rect x="0" y="32" width="16" height="16"/><rect x="16" y="32" width="16" height="16"/><rect x="32" y="32" width="16" height="16"/>
-      <rect x="0" y="48" width="16" height="16" opacity=".55"/><rect x="16" y="48" width="16" height="16"/><rect x="32" y="48" width="16" height="16"/><rect x="48" y="48" width="16" height="16"/>
-      <rect x="16" y="64" width="16" height="16" opacity=".55"/><rect x="48" y="64" width="16" height="16"/><rect x="64" y="64" width="16" height="16"/>
-      <rect x="64" y="80" width="16" height="16" opacity=".55"/><rect x="80" y="80" width="16" height="16"/><rect x="96" y="96" width="16" height="16" opacity=".55"/>
-    </symbol>
 
     <!-- Miter style isometric line art: server rack -->
     <symbol id="iso-rack" viewBox="-4 -4 234 262">
@@ -551,7 +542,7 @@
         </ol>
       </div>
       <div class="fc-media">
-        <svg class="px px-media" aria-hidden="true"><use href="#px-stairs"/></svg>
+        <img class="rack-edge" src="assets/brand/rack-steps.svg" alt="" aria-hidden="true" width="160" height="120">
         <img src="assets/img/cables-800.jpg" srcset="assets/img/cables-800.jpg 800w, assets/img/cables.jpg 1600w" sizes="(max-width: 900px) 100vw, 620px" alt="Blue network cables connected to a server rack" loading="lazy" width="800" height="534">
         <div class="mail-card" aria-hidden="true">
           <div class="mc-head"><span class="mc-from"><img src="assets/symbol.svg" alt="" width="20" height="18">Softano.eu</span><small>10:42</small></div>
@@ -601,6 +592,7 @@
 <section class="promise" id="services" aria-labelledby="promise-h">
   <div class="wrap">
     <div class="promise-card reveal">
+      <img class="promise-symbol" src="assets/brand/symbol-inv.svg" alt="" aria-hidden="true" width="500" height="440">
       <div class="promise-main">
         <p class="kicker inv">Licence replacement promise</p>
         <h2 class="promise-text" id="promise-h">If a licence key fails, we replace the licence.</h2>
@@ -755,6 +747,7 @@
 <section class="cta" aria-labelledby="cta-h">
   <div class="wrap">
     <div class="cta-band reveal">
+      <img class="cta-symbol" src="assets/symbol.svg" alt="" aria-hidden="true" width="500" height="440">
       <div class="cta-copy">
         <p class="kicker">Ready to start?</p>
         <h2 id="cta-h">Turn your IT plans into <span>what runs next.</span></h2>
