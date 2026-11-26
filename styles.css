@@ -1639,3 +1639,8 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
   .cta-actions .btn-row { width: 100%; }
   .cta-actions .btn { width: 100%; }
 }
+
+/* B2B: shading is baked into the photo (no transparent overlay, prints reliably in every PDF viewer) */
+.b2b::before { content: none !important; display: none !important; }
+.b2b { background: #0D1B48; }
+.b2b-bg { object-position: left center; }
