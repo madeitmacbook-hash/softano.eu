@@ -1675,7 +1675,6 @@ body { background: var(--page) none; }
    tint / white bands, plus the navy panels and photo band.
    ========================================================= */
 body { background: var(--page) !important; }
-.sw-range::before, .popular::before, .how::before, .hw-range::before { content: none !important; display: none !important; }
 :root { --band-t: var(--page); --band-w: #fff; --card-on-w: #F3F6FD; }
 
 .hero          { background: var(--band-t) !important; }
@@ -1699,3 +1698,16 @@ body { background: var(--page) !important; }
 #calculator .feature-card { background: var(--card-on-w); box-shadow: none; }
 #calculator .quote-card { box-shadow: 0 24px 50px -24px rgba(0,0,0,.6); }
 .faq .acc-item button .ic { background: none; }
+
+/* option 3: large S-frame outlines only (no dots, no grid) */
+.sw-range::before, .popular::before, .how::before, .hw-range::before { content: ""; display: block; position: absolute; z-index: 0; pointer-events: none; aspect-ratio: 500 / 439.76; background: url("assets/brand/frame-tint.svg") center / contain no-repeat; }
+.popular::before, .hw-range::before { background-image: url("assets/brand/frame-tint-white.svg"); }
+.sw-range::before { width: 520px; right: -170px; top: 40px; }
+.popular::before { width: 440px; left: -190px; bottom: -60px; top: auto; }
+.how::before { width: 560px; right: -220px; top: 30px; }
+.hw-range::before { width: 600px; left: -260px; bottom: -120px; top: auto; }
+@media (max-width: 900px) {
+  .sw-range::before { width: 300px; right: -150px; top: 10px; }
+  .how::before { width: 300px; right: -170px; top: 0; }
+  .popular::before, .hw-range::before { display: none; }
+}
