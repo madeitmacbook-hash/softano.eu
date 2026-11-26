@@ -1644,3 +1644,24 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 .b2b::before { content: none !important; display: none !important; }
 .b2b { background: #0D1B48; }
 .b2b-bg { object-position: left center; }
+
+/* =========================================================
+   Subtle background texture (solid colours only, PDF-safe)
+   ========================================================= */
+body { background: var(--page) url("assets/brand/dots.svg") 0 0 / 22px 22px repeat; }
+.hero, .partners, .promise, .sw-range, .popular, .how, .faq, .cta, .condition, .bundles, .inbox { background-color: transparent !important; background-image: none; }
+.hw-range { background: #fff url("assets/brand/dots-white.svg") 0 0 / 22px 22px repeat; }
+
+/* large S-frame outlines as quiet watermarks */
+.sw-range, .popular, .how, .faq, .hw-range { position: relative; overflow: hidden; }
+.sw-range > .wrap, .popular > .wrap, .how > .wrap, .faq > .wrap, .hw-range > .wrap { position: relative; z-index: 1; }
+.sw-range::before, .popular::before, .how::before, .hw-range::before { content: ""; position: absolute; z-index: 0; pointer-events: none; aspect-ratio: 500 / 439.76; background: url("assets/brand/frame-tint.svg") center / contain no-repeat; }
+.sw-range::before { width: 520px; right: -170px; top: 40px; }
+.popular::before { width: 440px; left: -190px; bottom: -60px; }
+.how::before { width: 560px; right: -220px; top: 30px; }
+.hw-range::before { width: 600px; left: -260px; bottom: -120px; background-image: url("assets/brand/frame-tint-white.svg"); }
+@media (max-width: 900px) {
+  .sw-range::before { width: 300px; right: -150px; top: 10px; }
+  .popular::before, .hw-range::before { display: none; }
+  .how::before { width: 300px; right: -170px; top: 0; }
+}
