@@ -19,7 +19,10 @@
   --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --head: "Outfit", "Plus Jakarta Sans", sans-serif;
   --display: "Archivo", "Plus Jakarta Sans", sans-serif;
-  --r: 2px;
+  --r: 14px;
+  --r-sm: 9px;
+  --r-lg: 26px;
+  --soft: 0 1px 2px rgba(11,21,48,.05), 0 10px 30px -12px rgba(15,33,96,.22);
   --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --script: "Caveat", "Segoe Print", cursive;
   --wrap: 1240px;
@@ -566,6 +569,102 @@ small { font-size: .85em; }
 }
 
 /* =========================================================
+   Softer layer: rounded, fewer boxes, more air
+   ========================================================= */
+.guides::before, .guides::after { display: none; }
+
+/* buttons & inputs */
+.btn, .search, .field input, .field textarea, .radio-pills span, .seg, .tag-list a, .pay-list li, .chip-float, .grade-chip, .annot span, .mc-btn, .calc-next, .cond-opt, .pc-row, .calc-rows > div, .sum-pay, .lang button, .icon-btn, .menu a { border-radius: var(--r-sm); }
+.search button { border-radius: 0 calc(var(--r-sm) - 1px) calc(var(--r-sm) - 1px) 0; }
+.seg button { border-radius: 7px; }
+
+/* hero: rounded bottom, calmer pattern, rounded photo */
+.hero { border-radius: 0 0 40px 40px; border-bottom: 0; }
+.hero::before { opacity: .55; }
+.hero-media > img { border-radius: var(--r-lg); }
+.price-card { border: 0; border-radius: 16px; box-shadow: var(--soft), 0 24px 50px -24px rgba(15,33,96,.45); }
+.annot span { background: rgba(11,21,48,.5); border-color: rgba(255,255,255,.55); }
+
+/* showcase: soft tinted tray instead of dashed hatch box */
+.hatch-frame { border: 0; border-radius: 30px; padding: 22px; background: rgba(255,255,255,.55); box-shadow: inset 0 0 0 1px rgba(28,58,136,.08); }
+.browser { border: 0; border-radius: 18px; box-shadow: var(--soft), 0 30px 60px -30px rgba(15,33,96,.4); }
+.pd-visual { border: 0; border-radius: 14px; }
+.lic-box { border-radius: 8px; }
+.shop-side li, .ss-acct { border-radius: 10px; }
+
+/* partners: separate soft tiles */
+.logo-grid { gap: 10px; border: 0; background: none; }
+.logo-grid li { border: 0; border-radius: var(--r); background: #fff; box-shadow: 0 1px 2px rgba(11,21,48,.04); transition: transform .2s, box-shadow .2s; }
+.logo-grid li:hover { background: #fff; transform: translateY(-2px); box-shadow: var(--soft); }
+.logo-grid li::after { color: transparent; }
+.logo-grid li:hover::after { color: var(--navy); }
+
+/* statement & stats: no rules */
+.stats { border-top: 0; margin-top: 48px; gap: 16px; }
+.stats > div { border-left: 0; padding: 0 8px; }
+
+/* smarter cards: soft, no borders */
+.soft-card { border: 0; border-radius: 22px; padding: 16px 16px 24px; box-shadow: 0 1px 2px rgba(10,122,111,.06); transition: transform .25s, box-shadow .25s; }
+.soft-card:hover { transform: translateY(-3px); box-shadow: var(--soft); }
+.sc-ui { border-radius: 14px; }
+.benefits { display: flex; flex-wrap: wrap; gap: 10px 28px; border: 0; margin-top: 28px; }
+.benefits li { border: 0 !important; padding: 0 !important; align-items: center; }
+.benefits .ic { width: 30px; height: 30px; padding: 7px; border-radius: 50%; background: #fff; margin: 0; }
+
+/* dark section */
+.dark-card { border-radius: 32px; }
+.dark-photo img { border-radius: 20px; }
+
+/* range: underline tabs, soft panel */
+.tabs { display: flex; gap: 28px; background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; margin: 0 24px 22px; }
+.tabs [role="tab"] { flex: none; height: 48px; padding: 0 2px; border: 0 !important; border-radius: 0 !important; background: none; box-shadow: none; font-size: 16px; margin-bottom: -1px; border-bottom: 3px solid transparent !important; }
+.tabs [role="tab"]:hover { background: none; }
+.tabs [role="tab"][aria-selected="true"] { background: none; box-shadow: none; color: var(--navy); border-bottom-color: var(--teal) !important; }
+.tab-panel { border: 0; border-radius: 28px; overflow: hidden; box-shadow: var(--soft); }
+.deep-panel { border-radius: 0; }
+.cert { border-radius: 16px; }
+.products-bar { border-top: 1px solid rgba(28,58,136,.08); }
+.product { border: 0; border-radius: 18px; background: #F4F7FE; padding: 12px 12px 16px; transition: transform .2s, box-shadow .2s; }
+.product:hover { transform: translateY(-3px); background: #fff; box-shadow: var(--soft); }
+.p-visual { border-radius: 12px; }
+.product .btn { background: #fff; }
+
+/* inbox feature card */
+.feature-card { border: 0; border-radius: 32px; box-shadow: var(--soft); }
+.fc-media { border-radius: 24px; }
+.mail-card { border-radius: 16px; }
+.steps { border-top: 0; }
+.steps li { border-bottom: 1px solid rgba(28,58,136,.08); }
+
+/* hardware: inset rounded panel instead of a hard full-width band */
+.hw { background: none; padding: 0 0 96px; color: #C9D6F5; }
+.hw-in { width: calc(100% - 2 * var(--gutter)); max-width: calc(var(--wrap) - 2 * var(--gutter)); padding: 72px 64px; border-radius: 32px; background: var(--navy); }
+.hw-photo img { border-radius: 22px; }
+.grade-chip { border-radius: 12px; }
+.gc-big { border-radius: 8px; }
+
+/* promise */
+.promise { padding-top: 0; }
+.promise-card { border-radius: 32px; }
+
+/* tools: separate cards with air */
+.tool-grid { gap: 16px; border: 0; background: none; }
+.tg-cell { border: 0; border-radius: 26px; background: #fff; box-shadow: 0 1px 2px rgba(11,21,48,.05); }
+.tg-photo { background: var(--deep); }
+.calc-ui { border-radius: 16px; border-color: var(--line); }
+
+/* b2b */
+.invoice { border-radius: 20px; }
+
+/* faq & contact */
+.contact-list { border-top: 0; }
+.contact-list > div { border-bottom: 1px solid rgba(10,122,111,.18); }
+.quote-form { border: 0; border-radius: 26px; box-shadow: var(--soft); }
+
+/* cta */
+.cta-band { border: 0; border-radius: 36px; }
+
+/* =========================================================
    Responsive
    ========================================================= */
 @media (max-width: 1400px) { .util-mail { display: none !important; } }
@@ -624,7 +723,7 @@ small { font-size: .85em; }
   .feature-card { grid-template-columns: 1fr; padding: 10px; }
   .fc-copy { padding: 26px 14px; }
   .fc-media { min-height: 480px; }
-  .hw-in { grid-template-columns: 1fr; gap: 44px; }
+  .hw-in { grid-template-columns: 1fr; gap: 44px; padding: 48px 28px; }
   .hw-photo { max-width: 560px; }
   .gc-1, .gc-2 { left: -6px; }
   .tool-grid { grid-template-columns: 1fr; }
@@ -709,6 +808,10 @@ small { font-size: .85em; }
   .mc-key { font-size: 12px; }
   .gc-2 { top: auto; bottom: 24px; }
   .hw-steps { grid-template-columns: 1fr 1fr; row-gap: 16px; }
+  .hw-in { padding: 36px 20px; border-radius: 24px; width: calc(100% - 24px); }
+  .hero { border-radius: 0 0 28px 28px; }
+  .tabs { gap: 18px; margin: 0 8px 16px; overflow-x: auto; }
+  .tab-panel, .feature-card, .dark-card, .promise-card, .cta-band { border-radius: 22px; }
   .promise { padding-top: 72px; }
   .promise-card { padding: 34px 22px 200px; }
   .service-list { grid-template-columns: 1fr; }
