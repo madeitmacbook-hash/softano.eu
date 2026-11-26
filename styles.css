@@ -1648,18 +1648,18 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 /* =========================================================
    Subtle background texture (solid colours only, PDF-safe)
    ========================================================= */
-body { background: var(--page) url("assets/brand/pat-grid.svg") 0 0 / 96px 96px repeat; }
+body { background: var(--page) none; }
 .hero, .partners, .promise, .sw-range, .popular, .how, .faq, .cta, .condition, .bundles, .inbox { background-color: transparent !important; background-image: none; }
-.hw-range { background: #fff url("assets/brand/pat-grid-white.svg") 0 0 / 96px 96px repeat; }
+.hw-range { background: #fff none; }
 
 /* large S-frame outlines as quiet watermarks */
 .sw-range, .popular, .how, .faq, .hw-range { position: relative; overflow: hidden; }
 .sw-range > .wrap, .popular > .wrap, .how > .wrap, .faq > .wrap, .hw-range > .wrap { position: relative; z-index: 1; }
-.sw-range::before, .popular::before, .how::before, .hw-range::before { content: ""; position: absolute; z-index: 0; pointer-events: none; aspect-ratio: 500 / 439.76; background: url("assets/brand/frame-tint.svg") center / contain no-repeat; }
+.sw-range::before, .popular::before, .how::before, .hw-range::before { content: ""; position: absolute; z-index: 0; pointer-events: none; aspect-ratio: 500 / 439.76; background: none center / contain no-repeat; }
 .sw-range::before { width: 520px; right: -170px; top: 40px; }
 .popular::before { width: 440px; left: -190px; bottom: -60px; }
 .how::before { width: 560px; right: -220px; top: 30px; }
-.hw-range::before { width: 600px; left: -260px; bottom: -120px; background-image: url("assets/brand/frame-tint-white.svg"); }
+.hw-range::before { width: 600px; left: -260px; bottom: -120px; background-image: none; }
 @media (max-width: 900px) {
   .sw-range::before { width: 300px; right: -150px; top: 10px; }
   .popular::before, .hw-range::before { display: none; }
@@ -1667,5 +1667,35 @@ body { background: var(--page) url("assets/brand/pat-grid.svg") 0 0 / 96px 96px 
 }
 
 /* background texture: blueprint grid instead of dots */
-body { background: var(--page) url("assets/brand/pat-grid.svg") 0 0 / 96px 96px repeat; }
-.hw-range { background: #fff url("assets/brand/pat-grid-white.svg") 0 0 / 96px 96px repeat; }
+body { background: var(--page) none; }
+.hw-range { background: #fff none; }
+
+/* =========================================================
+   Background: no wallpaper patterns. Section rhythm instead:
+   tint / white bands, plus the navy panels and photo band.
+   ========================================================= */
+body { background: var(--page) !important; }
+.sw-range::before, .popular::before, .how::before, .hw-range::before { content: none !important; display: none !important; }
+:root { --band-t: var(--page); --band-w: #fff; --card-on-w: #F3F6FD; }
+
+.hero          { background: var(--band-t) !important; }
+.partners      { background: var(--band-w) !important; }
+.sw-range      { background: var(--band-t) !important; padding-top: var(--sec-pad, 96px) !important; }
+.hw-range      { background: var(--band-w) !important; }
+.condition     { background: var(--band-t) !important; padding-bottom: var(--sec-pad, 96px) !important; }
+.popular       { background: var(--band-w) !important; }
+.promise, .bundles { background: var(--band-t) !important; }
+.bundles       { padding-bottom: var(--sec-pad, 96px) !important; }
+#calculator    { background: var(--band-w) !important; padding-top: var(--sec-pad, 96px) !important; padding-bottom: var(--sec-pad, 96px) !important; }
+.how           { background: var(--band-t) !important; }
+.faq           { background: var(--band-w) !important; }
+.cta           { background: var(--band-t) !important; }
+
+/* cards that now sit on white bands */
+.partners .wrap { padding-top: 48px !important; padding-bottom: 48px !important; }
+.logo-grid li { background: var(--card-on-w); box-shadow: none; }
+.popular .product { background: var(--card-on-w); }
+.popular .p-img { background: #E4EBF8; }
+#calculator .feature-card { background: var(--card-on-w); box-shadow: none; }
+#calculator .quote-card { box-shadow: 0 24px 50px -24px rgba(0,0,0,.6); }
+.faq .acc-item button .ic { background: none; }
