@@ -1488,3 +1488,6 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 
 /* hero: no decorative block behind the photo */
 .hero-media::before { content: none !important; display: none !important; }
+
+/* contact band: the S as a soft watermark */
+.cta-symbol { opacity: .14; }
