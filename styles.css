@@ -669,11 +669,23 @@ small { font-size: .85em; }
 .hero::before { display: none; }
 .hero-in { padding-top: 88px; padding-bottom: 80px; gap: 72px; }
 .hero .kicker { margin-bottom: 22px; }
-.hero-lead { margin-top: 26px; max-width: 460px; }
+.hero-lead { margin-top: 26px; max-width: 32em; }
 .hero .btn-row { margin-top: 34px; }
 .trust { margin-top: 40px; padding-top: 0; border-top: 0; }
 .hero-media::before { top: -28px; right: -28px; width: 55%; }
 .showcase-wrap { margin-top: 24px; }
+
+/* ---------- Hero fits the visible screen on desktop and laptops ---------- */
+@media (min-width: 901px) {
+  .hero-in { --hero-pad: clamp(28px, 5.5vh, 88px); min-height: max(520px, calc(100vh - 114px)); min-height: max(520px, calc(100svh - 114px)); padding-top: var(--hero-pad); padding-bottom: var(--hero-pad); }
+  .hero-title { font-size: clamp(34px, min(4.4vw, 7.6vh), 64px); }
+  .hero .kicker { margin-bottom: clamp(10px, 2.4vh, 22px); }
+  .hero-lead { margin-top: clamp(12px, 2.6vh, 26px); font-size: clamp(15.5px, 2.4vh, 18px); }
+  .hero .btn-row { margin-top: clamp(16px, 3.6vh, 34px); }
+  .trust { margin-top: clamp(16px, 4vh, 40px); }
+  .hero-media > img { aspect-ratio: auto; height: clamp(340px, calc(100vh - 114px - 2 * var(--hero-pad) - 24px), 640px); height: clamp(340px, calc(100svh - 114px - 2 * var(--hero-pad) - 24px), 640px); }
+  .price-card { bottom: clamp(16px, 3.5vh, 32px); }
+}
 
 /* =========================================================
    Responsive
