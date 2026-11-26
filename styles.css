@@ -1232,3 +1232,23 @@ small { font-size: .85em; }
 .popular .product .btn { background: var(--navy); color: #fff; align-self: flex-start; }
 .popular .product .btn:hover { background: var(--deep); }
 .dc-symbol { right: -96px; bottom: -86px; width: 230px; opacity: .18; }
+
+/* licensing quote card: text centred, panel sized to its content */
+#calculator .feature-card { align-items: stretch; }
+#calculator .fc-copy { display: flex; flex-direction: column; justify-content: center; padding: 40px 32px 40px 40px; }
+#calculator .fc-media { min-height: 0; height: clamp(400px, calc(var(--fit, 560px) - 120px), 470px); }
+#calculator .fc-media > img { object-position: center 70%; }
+#calculator .quote-card { transform: translateY(-50%); }
+@media (max-width: 900px) {
+  #calculator .fc-copy { padding: 28px 16px; }
+  #calculator .fc-media { height: 460px; }
+}
+@media (max-width: 600px) {
+  #calculator .fc-media { height: auto; min-height: 0; padding: 18px 12px; }
+  #calculator .fc-media > img { position: absolute; }
+  #calculator .quote-card { position: relative; left: auto; right: auto; top: auto; transform: none; padding: 14px; }
+  .qc-id { display: none; }
+  .qc-head { justify-content: space-between; }
+  .qc-row em { white-space: nowrap; }
+  .quote-card .calc-steps li { font-size: 9.5px; }
+}
