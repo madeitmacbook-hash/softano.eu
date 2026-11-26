@@ -1508,3 +1508,134 @@ section[id], [id="condition"] { scroll-margin-top: calc(var(--nav-h) + 12px); }
 .hw-tiles a, .mfr-tiles a { background: #F1F5FE; border: 1.5px solid #D5DFF3; }
 .hw-tiles a:hover, .mfr-tiles a:hover { background: #fff; border-color: var(--navy); box-shadow: var(--soft); }
 .hw-range .tag-list a { border: 1.5px solid #D5DFF3; }
+
+/* =========================================================
+   Mobile pass (phones)
+   ========================================================= */
+@media (max-width: 600px) {
+  :root { --gutter: 18px; }
+  .kicker { letter-spacing: .16em; font-size: 11px; gap: 10px; }
+  .h2 { font-size: 28px; }
+  .smarter, .inbox, .hw, .contact, .cta, .sw-range, .hw-range, .popular, .how, .condition, .bundles { padding-top: 56px; padding-bottom: 56px; }
+  .sw-range { padding-top: 12px; }
+  .condition, .bundles { padding-bottom: 0; }
+  .promise { padding-top: 56px !important; }
+  .faq-in { padding-top: 56px; padding-bottom: 56px; }
+  .sec-head { margin-bottom: 22px; }
+
+  /* tap targets */
+  .lang button { min-height: 32px; min-width: 32px; }
+  .foot-legal { gap: 2px 18px; }
+  .foot-legal a, .foot-cols a, .foot-contact a { display: inline-block; padding: 6px 0; }
+
+  /* hero */
+  .hero-in { padding-top: 32px; padding-bottom: 40px; gap: 40px; }
+  .hero-title { font-size: 33px; line-height: 1.08; }
+  .hero-title .ln { display: inline; }
+  .hero-title .ln.accent-ln { display: block; margin-top: 2px; }
+  .hero .btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .hero .btn { padding: 0 10px; }
+  .hero-media::before { top: -14px; right: -10px; width: 70%; }
+  .price-card { left: 10px; right: 10px; bottom: -36px; }
+  .hero-media { margin-bottom: 36px; }
+  .hero-benefits { grid-template-columns: 1fr; gap: 0; background: #fff; border-radius: 20px; padding: 4px 16px; }
+  .hero-benefits li { flex-direction: row; gap: 14px; padding: 14px 0; background: none; box-shadow: none; border-radius: 0; border-top: 1px solid var(--line); }
+  .hero-benefits li:first-child { border-top: 0; }
+  .hero-benefits .ic { flex: none; width: 32px; height: 32px; padding: 7px; }
+  .hero-benefits b { white-space: normal; margin-bottom: 2px; }
+
+  /* partners: compact 3-column logo grid */
+  .partners .wrap { padding-top: 40px; padding-bottom: 40px; }
+  .logo-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .logo-grid li { height: 52px; padding: 0 8px; border-radius: 10px; }
+  .logo-grid li:last-child { grid-column: auto; }
+  .logo-grid li img { max-width: 84px; max-height: 22px; }
+  .logo-grid img[alt="HPE"], .logo-grid img[alt="IBM"], .logo-grid img[alt="Hitachi"] { max-height: 16px; }
+  .logo-grid img[alt="Huawei"], .logo-grid img[alt="LANCOM Systems"], .logo-grid img[alt="HPE Aruba Networking"] { max-height: 24px; max-width: 88px; }
+
+  /* software range */
+  .range-card { padding: 18px; border-radius: 18px; }
+  .rc-head { min-height: 0; margin-bottom: 4px; }
+  .rc-list li { padding: 9px 0; }
+
+  /* hardware */
+  .hw-tiles { gap: 8px; margin-bottom: 28px; }
+  .hw-tiles a { padding: 8px 10px 12px; border-radius: 14px; }
+  .hw-tiles img { padding: 8px 10px; margin-bottom: 4px; }
+  .hw-tiles b { font-size: 14px; padding: 0; }
+  .hw-tiles small { font-size: 12px; padding: 0; }
+  .mfr-tiles { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 8px; margin: 0 calc(-1 * var(--gutter)) 28px; padding: 0 var(--gutter) 6px; scrollbar-width: none; }
+  .mfr-tiles::-webkit-scrollbar { display: none; }
+  .mfr-tiles li { flex: 0 0 42%; scroll-snap-align: start; }
+  .mfr-tiles a { height: 100%; }
+  .rely-card { padding: 20px; }
+
+  /* condition */
+  .cond-panel { padding: 26px 18px; border-radius: 24px; }
+  .cond-head { margin-bottom: 20px; }
+  .cond-head > p:not(.kicker) { font-size: 15px; }
+  .cond-card { padding: 18px; }
+  .cond-card h3 { font-size: 18px; }
+  .cond-card dl > div { font-size: 14px; }
+  .grades { padding: 12px; gap: 14px; }
+  .grades-photo img { max-height: 120px; }
+  .grades-copy { padding: 0 4px 6px; }
+
+  /* popular */
+  .sec-head.row { gap: 14px; }
+  .sec-head.row > div { width: 100%; }
+  .p-img { padding: 12px 12px 8px; }
+  .popular .product h3 { font-size: 13px; min-height: calc(5 * 1.35em); }
+  .p-low { font-size: 11px; line-height: 1.35; min-height: 2.7em; }
+  .popular .product .btn { width: 100%; justify-content: center; }
+
+  /* business */
+  .b2b .btn-row { display: grid; grid-template-columns: 1fr; }
+  .b2b-checkout { padding: 18px; }
+  .bc-total dd { font-size: 26px; }
+
+  /* service, payment, shipping */
+  .promise-card { padding: 28px 20px !important; border-radius: 24px; }
+  .promise-text { font-size: 26px; }
+  .service-list { margin-top: 20px; }
+  .service-list li { padding: 12px 0; }
+  .ps-block { padding: 18px; }
+  .ps-block:not(.ship-block) .pay-logos { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .ps-block:not(.ship-block) .pay-logos li { height: 44px; padding: 6px; border-radius: 10px; }
+  .ps-block:not(.ship-block) .pay-logos img { max-height: 20px; }
+  .pay-invoice { grid-column: 1 / -1 !important; flex-direction: column !important; align-items: flex-start !important; gap: 2px !important; height: auto !important; padding: 10px 14px !important; }
+
+  /* bundles */
+  .bundle-card { padding: 28px 20px !important; }
+  .bundle-card .btn { width: 100%; }
+
+  /* quote card: progress bars only */
+  .quote-card .calc-steps li { font-size: 0; padding-top: 0; }
+  .quote-card .calc-steps li::before { content: none; }
+  .qc-price { padding-bottom: 10px; }
+
+  /* how it works */
+  .how-row { padding: 20px; border-radius: 20px; }
+  .how .sub-h { flex-direction: column; gap: 2px; }
+
+  /* contact: watermark sits behind the heading, no empty space */
+  .cta-band { padding: 32px 20px !important; }
+  .cta-symbol { width: 150px !important; top: 18px !important; right: -24px !important; bottom: auto !important; }
+  .cta-actions .btn-row { display: grid; grid-template-columns: 1fr; }
+  .cta-contacts { margin-top: 22px; gap: 8px; }
+  .cta-contacts li { padding: 14px 16px; }
+
+  /* footer */
+  .footer { padding-top: 48px; }
+  .foot-top { gap: 32px; padding-bottom: 32px; }
+  .foot-cols { grid-template-columns: 1fr 1fr !important; gap: 24px 20px; }
+  .foot-cols > div:first-child { grid-column: 1 / -1; }
+  .foot-cols h2 { letter-spacing: .14em; }
+}
+@media (max-width: 600px) {
+  .hero-title { text-wrap: wrap; font-size: 32px; }
+  .cta-symbol { display: none; }
+  .cta-actions { display: block; }
+  .cta-actions .btn-row { width: 100%; }
+  .cta-actions .btn { width: 100%; }
+}
