@@ -4,7 +4,6 @@ Free homepage concept for softano.eu by Dygram Design. Static site: `index.html`
 Deploys on Vercel with zero config.
 
 ## Open items for the client
-- Real logo SVGs: `assets/symbol.svg` and the wordmark in the header are stand-ins until the `Softano.eu - Files.zip` SVGs are added.
 - Real partner logos (the partner grid uses text wordmarks for now).
 - Exact delivery times for the FAQ (marked `[placeholder]`).
 - Approval of the legal FAQ answer about reselling used licences.
