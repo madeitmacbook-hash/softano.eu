@@ -1746,3 +1746,5 @@ body { background: var(--page) !important; }
 .lgdeco { display: none; }
 @media (min-width: 1600px) { .lgdeco { display: block; } }
 @media (min-width: 1280px) and (max-width: 1800px) and (min-resolution: 1.2dppx) and (max-resolution: 1.6dppx) { .lgdeco { display: block; } }
+.partners, .bundles { position: relative; }
+.partners > .wrap, .bundles > .wrap { position: relative; z-index: 1; }
