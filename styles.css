@@ -1712,39 +1712,3 @@ body { background: var(--page) !important; }
   .popular::before, .hw-range::before { display: none; }
 }
 
-/* =========================================================
-   Logo elements in the side margins only (never over content)
-   ========================================================= */
-.sw-range::before, .popular::before, .how::before, .hw-range::before { content: none !important; display: none !important; }
-.hero, .sw-range, .hw-range, .condition, .popular, .promise, #calculator, .how, .faq, .cta { position: relative; }
-.hero > .wrap, .sw-range > .wrap, .hw-range > .wrap, .condition > .wrap, .popular > .wrap, .promise > .wrap, #calculator > .wrap, .how > .wrap, .faq > .wrap, .cta > .wrap { position: relative; z-index: 1; }
-.lgdeco { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-.lg {
-  position: absolute; display: block;
-  --G: calc((100% - 1240px) / 2);              /* empty margin outside the content box */
-  --W: min(var(--max), calc((var(--G) - 48px) * var(--k)));
-  width: max(0px, var(--W)); aspect-ratio: var(--ar);
-  background: center / contain no-repeat;
-}
-.lg.l { left: max(0px, calc((var(--G) - var(--W)) / 2)); }
-.lg.r { right: max(0px, calc((var(--G) - var(--W)) / 2)); }
-.lg.hook-top  { --max: 210px; --k: 1;   --ar: 500 / 246.98; }
-.lg.hook-bot  { --max: 210px; --k: 1;   --ar: 500 / 246.98; }
-.lg.bar-long  { --max: 170px; --k: .9;  --ar: 168.56 / 46.21; }
-.lg.bar-short { --max: 92px;  --k: .5;  --ar: 92.41 / 46.21; }
-.lg.sq        { --max: 46px;  --k: .26; --ar: 1 / 1; }
-.band-t .hook-top  { background-image: url("assets/brand/lg-hook-top-t.svg"); }
-.band-t .hook-bot  { background-image: url("assets/brand/lg-hook-bot-t.svg"); }
-.band-t .bar-long  { background-image: url("assets/brand/lg-bar-long-t.svg"); }
-.band-t .bar-short { background-image: url("assets/brand/lg-bar-short-t.svg"); }
-.band-t .sq        { background-image: url("assets/brand/lg-sq-t.svg"); }
-.band-w .hook-top  { background-image: url("assets/brand/lg-hook-top-w.svg"); }
-.band-w .hook-bot  { background-image: url("assets/brand/lg-hook-bot-w.svg"); }
-.band-w .bar-long  { background-image: url("assets/brand/lg-bar-long-w.svg"); }
-.band-w .bar-short { background-image: url("assets/brand/lg-bar-short-w.svg"); }
-.band-w .sq        { background-image: url("assets/brand/lg-sq-w.svg"); }
-.lgdeco { display: none; }
-@media (min-width: 1600px) { .lgdeco { display: block; } }
-@media (min-width: 1280px) and (max-width: 1800px) and (min-resolution: 1.2dppx) and (max-resolution: 1.6dppx) { .lgdeco { display: block; } }
-.partners, .bundles { position: relative; }
-.partners > .wrap, .bundles > .wrap { position: relative; z-index: 1; }
